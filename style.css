@@ -1,0 +1,142 @@
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --brown: #302718;
+  --brown-rgb: 48, 39, 24;
+  --gold: #c7ab59;
+  --beigeGold: #ded2a8;
+  --white: #ffffff;
+  --green: #699e3c;
+}
+body {
+  font-family: "jost", cursive;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-image: url("Images/HeroTree.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 7%;
+  background: linear-gradient(to top right, var(--gold), var(--beigeGold));
+  border-radius: 0 150px 150px 0;
+  text-align: center;
+  box-shadow: 0 0 40px var(--brown);
+}
+
+.right {
+  width: 65%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15%;
+  padding-left: 10%;
+}
+.overlay {
+  color: var(--white);
+  text-align: center;
+  z-index: 2;
+  width: 500px;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  text-shadow:
+    0 0 5px var(--brown),
+    0 0 10px var(--brown),
+    0 0 20px var(--brown),
+    0 0 40px var(--brown);
+  font-family: "Oregano", cursive;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-shadow:
+    0 0 5px var(--brown),
+    0 0 10px var(--brown),
+    0 0 20px var(--brown),
+    0 0 40px var(--brown);
+  font-family: "Oregano", cursive;
+}
+h3 {
+  font-size: 2rem;
+  color: var(--brown);
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+
+.profile-pic {
+  border-radius: 80px;
+  width: 250px;
+  box-shadow: 0 0 25px rgba(var(--brown-rgb));
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.hero-btn {
+  background: transparent;
+  border: 2px solid var(--brown);
+  color: var(--brown);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 1rem;
+  margin-top: 3rem;
+  transition:
+    background 0.8s,
+    color 0.3s;
+}
+#contact {
+  background-color: var(--green);
+  color: var(--beigeGold);
+  text-shadow: 0 0 2px var(--brown);
+}
+#contact:hover {
+  background: var(--brown);
+}
+.hero-btn:hover {
+  background: var(--brown);
+  color: var(--beigeGold);
+}
