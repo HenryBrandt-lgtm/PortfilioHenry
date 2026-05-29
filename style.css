@@ -242,7 +242,6 @@ h3 {
 
 #site-footer {
   background: var(--beigeGold);
-  padding: 5px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,7 +251,6 @@ h3 {
   color: var(--brown);
   font-size: 13px;
   padding-right: 26px;
-  font-weight: bold;
 }
 
 .footer-links {
