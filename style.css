@@ -54,7 +54,6 @@ body {
   align-items: center;
   justify-content: center;
   padding-left: 10%;
-  padding-bottom: 5%;
   /* background: linear-gradient(to top right, var(--gold), var(--beigeGold)); */
   border-radius: 0 150px 150px 0;
   text-align: center;
@@ -114,7 +113,11 @@ h3 {
 .profile-pic {
   border-radius: 80px;
   width: 250px;
-  box-shadow: 0 0 25px rgba(var(--brown-rgb));
+  box-shadow:
+    0 0 5px var(--brown),
+    0 0 10px var(--brown),
+    0 0 20px var(--brown),
+    0 0 40px var(--brown);
   margin: 0 auto;
   margin-bottom: 3rem;
 }
