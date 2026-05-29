@@ -237,3 +237,33 @@ h3 {
     display: flex;
   }
 }
+
+/* ==========footer=========== */
+
+#site-footer {
+  background: var(--beigeGold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#site-footer p {
+  color: var(--brown);
+  font-size: 13px;
+  padding-right: 26px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: var(--brown);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+}
