@@ -1,0 +1,202 @@
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --brown: #302718;
+  --brown-rgb: 48, 39, 24;
+  --gold: #c7ab59;
+  --gold-rgb: 199, 171, 89;
+  --beigeGold: #ded2a8;
+  --beigeGold-rgb: 222, 210, 168;
+  --white: #ffffff;
+  --green: #699e3c;
+}
+
+#contact-me {
+  font-family: "jost", "Century Gothic", AppleGothic, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+.left-contact {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-left: 10%;
+}
+.left-contact h2 {
+  color: var(--brown);
+  font-size: 2rem;
+  text-shadow:
+    0 0 5px var(--beigeGold),
+    0 0 10px var(--beigeGold);
+}
+.right-contact {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: rgba(var(--beigeGold-rgb), 0.6);
+  width: 80%;
+  height: 50%;
+  border-radius: 24px;
+
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  box-shadow:
+    0 0 5px var(--brown),
+    0 0 10px var(--brown),
+    0 0 20px var(--brown),
+    0 0 40px var(--brown);
+}
+
+form input,
+form textarea {
+  width: 80%;
+
+  padding: 0.7rem;
+
+  border-radius: 14px;
+
+  background: rgba(var(--gold-rgb), 0.5);
+  border: 2px solid var(--brown);
+  color: var(--brown);
+
+  font-size: 1rem;
+
+  transition: 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.868);
+}
+
+form input:focus,
+form textarea:focus {
+  background: rgba(var(--beigeGold-rgb), 0.8);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 0 2px var(--green);
+}
+
+#send-email {
+  padding: 16px;
+  width: 10rem;
+  border: none;
+  border-radius: 14px;
+
+  background-color: var(--green);
+  color: var(--beigeGold);
+  text-shadow: 0 0 5px var(--brown);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid var(--brown);
+
+  cursor: pointer;
+
+  transition:
+    background 0.8s,
+    color 0.3s;
+  box-shadow:
+    0 0 5px var(--beigeGold),
+    0 0 10px var(--beigeGold);
+}
+
+#send-email:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px var(--gold);
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 28px;
+  }
+
+  form h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ======väder===== */
+
+.card {
+  background: rgba(var(--beigeGold-rgb), 0.6);
+  padding: 1rem;
+  border-radius: 24px;
+  box-shadow:
+    0 0 5px var(--brown),
+    0 0 10px var(--brown),
+    0 0 20px var(--brown),
+    0 0 40px var(--brown);
+  width: 50%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  color: var(--brown);
+}
+p {
+  font-size: 1.5rem;
+}
+.cityDisplay,
+.tempDisplay {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--brown);
+  text-shadow: none;
+}
+.humidityDisplay {
+  margin-bottom: 25px;
+}
+.descriptionDisplay {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.weatherEmoji {
+  font-size: 7.5rem;
+}
+.errorDisplay {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.75);
+}
