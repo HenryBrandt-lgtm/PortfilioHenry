@@ -42,6 +42,9 @@ p {
   font-family: "jost", "Century Gothic", AppleGothic, sans-serif;
   display: flex;
   height: 100vh;
+  background-image: url("Images/tran.png");
+  background-size: cover;
+  background-position: center;
 }
 .left-contact {
   width: 50%;
