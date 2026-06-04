@@ -155,12 +155,14 @@ h3 {
     0 0 10px var(--beigeGold);
   text-decoration: none;
 }
-#contact {
+#contact,
+#download {
   background-color: var(--green);
   color: var(--beigeGold);
   text-shadow: 0 0 2px var(--brown);
 }
-#contact:hover {
+#contact,
+#download:hover {
   background: var(--brown);
 }
 .hero-btn:hover {
@@ -306,4 +308,31 @@ h3 {
 
 .footer-links a:hover {
   color: white;
+}
+
+/* ===========resume======== */
+.resume-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.resume a {
+  margin-left: 39rem;
+  margin-top: 3rem;
+}
+.resume-img {
+  box-shadow:
+    0 0 5px var(--brown),
+    0 0 10px var(--brown),
+    0 0 20px var(--brown),
+    0 0 40px var(--brown);
 }

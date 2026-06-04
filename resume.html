@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortfolioHenryBrandt</title>
+    <title>CV-Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contactForm.css" />
   </head>
@@ -23,53 +22,26 @@
         <span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#hero">Hem</a></li>
-        <li><a href="#contact-me">Kontakt</a></li>
-        <li><a href="#about">Om mig</a></li>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="   #contact-me">Kontakt</a></li>
+        <li><a href="index.html#about">Om mig</a></li>
         <li><a href="resume.html">CV</a></li>
       </ul>
     </nav>
-    <!-- =========================hero=============== -->
-    <div class="container" id="hero">
-      <div class="left">
-        <div class="profile-card">
-          <img
-            class="profile-pic"
-            src="Images/HenryKlippt.png"
-            alt="PictureOfMe"
-          />
-
-          <h3>Arbetsvillig och snabblärd,</h3>
-          <h3>redo för nya erfarenheter!</h3>
-          <div class="buttons">
-            <a href="#contact-me" class="hero-btn" id="contact">Kontakta mig</a>
-            <a href="#about" class="hero-btn" id="more">Mer om mig</a>
-          </div>
-        </div>
+    <!-- ========resume===== -->
+    <section class="resume-page">
+      <div class="resume">
+        <a
+          href="files/CV Henry Brandt.pdf"
+          download
+          class="hero-btn"
+          id="download"
+          >Ladda ner</a
+        >
+        <img class="resume-img" src="Images/CV.png" alt="Henry Brandt Resume" />
       </div>
-
-      <div class="right">
-        <div class="overlay-hero">
-          <h2 class="hero-name">Henry Brandt</h2>
-          <h1 class="hero-header">.NET utvecklare med fullstack kunskaper.</h1>
-          <img
-            class="catgif"
-            src="Images/cat.gif"
-            alt="flying parachutte cat"
-          />
-        </div>
-      </div>
-    </div>
-    <!-- ===========avskiljare========== -->
-    <!-- <div class="about-container">
-      <img class="about-picture" id="about-tree" src="Images/" alt="TreeLine" />
-    </div> -->
-    <!-- ==============about================ -->
-    <section id="about" style="position: relative"></section>
-    <!-- ========nästa====== -->
-    <div class="next"></div>
-
-    <!-- ========contact================ -->
+    </section>
+    <!-- ==========contact========== -->
     <section id="contact-me">
       <div class="left-contact">
         <form
@@ -83,11 +55,7 @@
           <button type="submit" id="send-email">Skicka</button>
         </form>
       </div>
-      <div class="right-contact">
-        <div class="card"></div>
-      </div>
     </section>
-
     <!-- ====================footer================ -->
     <footer id="site-footer">
       <p>© 2026 Henry Brandt</p>
