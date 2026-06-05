@@ -39,10 +39,9 @@ p {
 }
 
 #contact-me {
-  font-family: "jost", "Century Gothic", AppleGothic, sans-serif;
   display: flex;
   height: 100vh;
-  background-image: url("Images/tran.png");
+  background-image: url("Images/footertreeline.png");
   background-size: cover;
   background-position: center;
   justify-content: center;
@@ -118,7 +117,6 @@ form textarea:focus {
 #send-email {
   padding: 16px;
   width: 10rem;
-  border: none;
   border-radius: 14px;
 
   background-color: var(--green);

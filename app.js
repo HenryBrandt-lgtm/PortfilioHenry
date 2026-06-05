@@ -146,10 +146,19 @@ document.querySelectorAll(".areas-list a").forEach(function (link) {
     document.querySelectorAll(".info-box").forEach(function (box) {
       box.style.display = "none";
     });
+    //nollställ pilar
+    document.querySelectorAll(".arrow-icon").forEach(function (arrow) {
+      arrow.classList.remove("flipped");
+    });
 
     // visa bara om den inte redan var synlig
     if (!isVisible) {
       target.style.display = "block";
+
+      //ger pilen ny class
+      const arrow = this.querySelector(".arrow-icon");
+      arrow.classList.toggle("flipped");
+      console.log("före:", arrow.classList);
     }
   });
 });
