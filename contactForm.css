@@ -45,35 +45,31 @@ p {
   background-image: url("Images/tran.png");
   background-size: cover;
   background-position: center;
+  justify-content: center;
+  align-items: center;
 }
-.left-contact {
-  width: 50%;
+.contact-container {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-left: 10%;
+  padding-top: 10rem;
+  z-index: 3;
 }
-.left-contact h2 {
+.contact-container h2 {
   color: var(--brown);
-  font-size: 2rem;
+  font-size: 4rem;
+  font-family: "Oregano", cursive;
   text-shadow:
     0 0 5px var(--beigeGold),
     0 0 10px var(--beigeGold);
 }
-.right-contact {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 form {
-  background: rgba(var(--beigeGold-rgb), 0.6);
+  background: rgba(var(--beigeGold-rgb), 0.9);
   width: 80%;
   height: 50%;
   border-radius: 24px;
-
   padding: 40px;
 
   display: flex;
@@ -107,7 +103,7 @@ form textarea {
 
 form input::placeholder,
 form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.868);
+  color: var(--white);
 }
 
 form input:focus,
@@ -134,12 +130,9 @@ form textarea:focus {
 
   cursor: pointer;
 
-  transition:
-    background 0.8s,
-    color 0.3s;
   box-shadow:
-    0 0 5px var(--beigeGold),
-    0 0 10px var(--beigeGold);
+    0 0 5px var(--brown),
+    0 0 10px var(--brown);
 }
 
 #send-email:hover {
@@ -156,50 +149,4 @@ form textarea:focus {
   form h2 {
     font-size: 1.6rem;
   }
-}
-
-/* ======väder===== */
-
-.card {
-  background: rgba(var(--beigeGold-rgb), 0.6);
-  padding: 1rem;
-  border-radius: 24px;
-  box-shadow:
-    0 0 5px var(--brown),
-    0 0 10px var(--brown),
-    0 0 20px var(--brown),
-    0 0 40px var(--brown);
-  width: 50%;
-  min-width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50%;
-  color: var(--brown);
-}
-p {
-  font-size: 1.5rem;
-}
-.cityDisplay,
-.tempDisplay {
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: var(--brown);
-  text-shadow: none;
-}
-.humidityDisplay {
-  margin-bottom: 25px;
-}
-.descriptionDisplay {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 2rem;
-}
-.weatherEmoji {
-  font-size: 7.5rem;
-}
-.errorDisplay {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.75);
 }

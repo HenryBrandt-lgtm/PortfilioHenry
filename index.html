@@ -24,8 +24,9 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#hero">Hem</a></li>
-        <li><a href="#contact-me">Kontakt</a></li>
         <li><a href="#about">Om mig</a></li>
+        <li><a href="#projects">Projekt</a></li>
+        <li><a href="#contact-me">Kontakt</a></li>
         <li><a href="resume.html">CV</a></li>
       </ul>
     </nav>
@@ -66,12 +67,54 @@
     </div> -->
     <!-- ==============about================ -->
     <section id="about" style="position: relative"></section>
-    <!-- ========nästa====== -->
-    <div class="next"></div>
+    <!-- ========project====== -->
+
+    <section id="projects">
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="Images/tetris-site.png" alt="Projekt 1" />
+          <div class="project-info">
+            <h3>Tetris</h3>
+            <p>
+              Skpade och designade en tetris sida med neon tema. Ett av mina
+              absolut första projekt i HTML, CSS och JS.
+            </p>
+            <a
+              href="https://github.com/HenryBrandt-lgtm/Tetris"
+              target="_blank"
+              class="card-icon"
+              ><img src="Images/git.svg" alt="gitHub Icon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Images/projekt2.png" alt="Projekt 2" />
+          <div class="project-info">
+            <h3>Projektnamn</h3>
+            <p>Kort beskrivning.</p>
+            <a href="" target="_blank" class="card-icon"
+              ><img src="Images/git.svg" alt="gitHub Icon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Images/projekt3.png" alt="Projekt 3" />
+          <div class="project-info">
+            <h3>Projektnamn</h3>
+            <p>Kort beskrivning.</p>
+            <a href="#" target="_blank" class="card-icon"
+              ><img src="Images/git.svg" alt="gitHub Icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ========contact================ -->
     <section id="contact-me">
-      <div class="left-contact">
+      <div class="contact-container">
         <form
           action="https://formsubmit.co/628b994dd02f0f2e605fde5d60cd582c"
           method="POST"
@@ -79,17 +122,19 @@
           <h2>Kontakta mig</h2>
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email" required />
-          <textarea rows="5" name="Message" required></textarea>
+          <textarea
+            rows="5"
+            name="Message"
+            placeholder="Meddelande"
+            required
+          ></textarea>
           <button type="submit" id="send-email">Skicka</button>
         </form>
-      </div>
-      <div class="right-contact">
-        <div class="card"></div>
       </div>
     </section>
 
     <!-- ====================footer================ -->
-    <footer id="site-footer">
+    <footer class="footer" id="site-footer">
       <p>© 2026 Henry Brandt</p>
       <div class="footer-links">
         <a
@@ -98,13 +143,14 @@
         >
           <img src="Images/linkedIn.svg" width="25px" alt="linedIn Icon" />
         </a>
-        <a href="#">
+        <a href="https://github.com/HenryBrandt-lgtm" target="_blank">
           <img src="Images/git.svg" width="25px" alt="gitHub Icon" />
         </a>
-        <a href="#">
+        <a href="#contact-me">
           <img src="Images/mail.svg" width="25px" alt="Mail Icon" />
         </a>
       </div>
+      <div class="weather-stuff"></div>
     </footer>
     <script src="app.js" charset="utf-8"></script>
   </body>
