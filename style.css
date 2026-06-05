@@ -405,3 +405,78 @@ h3 {
     0 0 20px var(--brown),
     0 0 40px var(--brown);
 }
+
+/* =========about me======== */
+
+#about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brown);
+}
+#about h2 {
+  font-size: 2.5rem;
+}
+#about p {
+  font-size: 1.2rem;
+}
+.left-about {
+  padding-left: 20%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* .mid-about {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+.right-about {
+  padding-right: 20%;
+  padding-left: 2rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-container {
+  background: rgba(var(--beigeGold-rgb), 0.8);
+  box-shadow: 0 0 40px var(--brown);
+  width: auto;
+  padding: 3rem;
+  border-radius: 50px;
+  padding: 3rem;
+  z-index: 2;
+}
+
+.info-box {
+  display: none;
+}
+.right-about a {
+  text-decoration: none;
+  color: var(--brown);
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 20px;
+}
+.right-about img {
+  width: 30px;
+}
+.areas-list {
+  list-style: none;
+  padding: 0;
+}
+
+.areas-list li {
+  margin-bottom: 1rem;
+}
