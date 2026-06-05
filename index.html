@@ -44,7 +44,7 @@
           <h3>redo för nya erfarenheter!</h3>
           <div class="buttons">
             <a href="#contact-me" class="hero-btn" id="contact">Kontakta mig</a>
-            <a href="#about" class="hero-btn" id="more">Mer om mig</a>
+            <a href="resume.html" class="hero-btn" id="more">Mitt CV</a>
           </div>
         </div>
       </div>
@@ -66,7 +66,95 @@
       <img class="about-picture" id="about-tree" src="Images/" alt="TreeLine" />
     </div> -->
     <!-- ==============about================ -->
-    <section id="about" style="position: relative"></section>
+    <section id="about">
+      <div class="left-about">
+        <div class="about-container">
+          <h2 class="about-header">Tidigare småföretagare.</h2>
+          <p class="about-text">
+            Jag heter Henry, är 33 år gammal och tidigare delägare för bolaget
+            Sickla Party AB med tre butiker inom detaljhandel i Stockholm och
+            Uppsala. Jag har varit med i driften och utvecklingen av bolaget
+            under 10år innan det var dags att helt byta riktning och börja
+            plugga till .NET utvecklare.
+          </p>
+          <p class="about-text">
+            Genom mitt arbete har jag fått stor erfarenhet av att anställa, lära
+            upp och leda personal vilket gett mig en bra samarbetsförmåga och
+            förståelse för vad som krävs som bra anställd. Jag har även haft
+            kontakt med leverantörer och företagskunder och på så sätt byggt upp
+            relationer och utvecklat företaget. Som egenföretagare är jag van
+            att arbeta i högt tempo och har en hög arbetsmoral vilket har krävts
+            för att driva bolaget framgångsrikt.
+          </p>
+        </div>
+      </div>
+      <div class="right-about">
+        <div class="about-container">
+          <h2 class="about-header">Mina kunskaper</h2>
+          <ul class="areas-list">
+            <li>
+              <a href="#" data-target="C#">
+                <img src="Images/icons8-c-sharp-logo-100.png" alt="C#-logo" />
+                <span>C#</span></a
+              >
+              <div id="C#" class="info-box">Vad jag kan om C#.</div>
+            </li>
+
+            <li>
+              <a href="#" data-target="SQL">
+                <img src="Images/icons8-sql-64.png" alt="SQL-logo" />
+                <span>SQL</span></a
+              >
+              <div id="SQL" class="info-box">Vad jag kan om SQl.</div>
+            </li>
+            <li>
+              <a href="#" data-target="HTML">
+                <img src="Images/html5-brands-solid-full.svg" alt="HTML-logo" />
+                <span>HTML</span></a
+              >
+              <div id="HTML" class="info-box">Vad jag kan om HTML.</div>
+            </li>
+            <li>
+              <a href="#" data-target="CSS">
+                <img
+                  src="Images/css3-alt-brands-solid-full.svg"
+                  alt="CSS-logo"
+                />
+                <span>CSS</span></a
+              >
+              <div id="CSS" class="info-box">Vad jag kan om CSS.</div>
+            </li>
+            <li>
+              <a href="#" data-target="JS">
+                <img src="Images/icons8-javascript-100.png" alt="JS-logo" />
+                <span>JavaScript</span></a
+              >
+              <div id="JS" class="info-box">Vad jag kan om JavaScript.</div>
+            </li>
+            <li>
+              <a href="#" data-target="RazorPages">
+                <img src="Images/.png" alt="RazorPages-logo" />
+                <span>RazorPages</span></a
+              >
+              <div id="RazorPages" class="info-box">
+                Vad jag kan om RazorPages.
+              </div>
+            </li>
+            <li>
+              <a href="#" data-target="React">
+                <img
+                  src="Images/react-brands-solid-full.svg"
+                  alt="React-logo"
+                />
+                <span>React</span></a
+              >
+              <div id="React" class="info-box">Vad jag kan om React.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="right-about"><div class="about-container"></div></div> -->
+    </section>
     <!-- ========project====== -->
 
     <section id="projects">
@@ -120,7 +208,14 @@
           method="POST"
         >
           <h2>Kontakta mig</h2>
-          <input type="text" name="name" placeholder="Name" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            pattern="[A-Za-zÅÄÖåäö\s]+"
+            title="Namnet får bara innehålla bokstäver"
+            required
+          />
           <input type="email" name="email" placeholder="Email" required />
           <textarea
             rows="5"

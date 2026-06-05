@@ -132,3 +132,24 @@ window.addEventListener("scroll", () => {
   gif.style.left = `${x}px`;
   gif.style.top = `${y}px`;
 });
+
+//======visa och dölja kunskapsinfo======
+
+document.querySelectorAll(".areas-list a").forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const target = document.getElementById(this.getAttribute("data-target"));
+    const isVisible = target.style.display === "block";
+
+    // dölj alla först
+    document.querySelectorAll(".info-box").forEach(function (box) {
+      box.style.display = "none";
+    });
+
+    // visa bara om den inte redan var synlig
+    if (!isVisible) {
+      target.style.display = "block";
+    }
+  });
+});
