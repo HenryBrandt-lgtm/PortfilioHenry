@@ -139,12 +139,19 @@ form textarea:focus {
   box-shadow: 0 10px 25px var(--gold);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+  .contact-container {
+    width: 80%;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
   form {
     padding: 28px;
+    width: 100%;
   }
 
-  form h2 {
-    font-size: 1.6rem;
+  .contact-container h2 {
+    font-size: 3rem;
   }
 }
