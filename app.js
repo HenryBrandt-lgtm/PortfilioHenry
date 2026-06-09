@@ -99,17 +99,6 @@ initWeather();
 
 // =====gif=====
 
-//lodrätt förflyttning
-// window.addEventListener("scroll", () => {
-//   const scrollY = window.scrollY;
-//   const scrollX = window.scrollX;
-//   const gif = document.querySelector(".catgif");
-
-//   // Flytta gifen baserat på scroll
-//   gif.style.transform = `translateX(${scrollY * 0.5}px) translateY(${scrollY * 0.5}px)`;
-// });
-
-//hoppar
 const gif = document.querySelector(".catgif");
 
 window.addEventListener("scroll", () => {

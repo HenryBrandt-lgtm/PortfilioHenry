@@ -84,8 +84,8 @@ body {
 .catgif {
   width: 150px;
   position: fixed;
-  top: 80px;
-  right: 400px;
+  top: 60px;
+  right: 20px;
   z-index: 1;
 }
 .hero-header {
@@ -127,7 +127,6 @@ h3 {
 }
 
 .profile-pic {
-  border-radius: 80px;
   width: 300px;
   margin: 0 auto;
   margin-bottom: 3rem;
@@ -233,7 +232,7 @@ h3 {
   border-radius: 3px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .hamburger {
     display: flex;
   }
@@ -436,13 +435,7 @@ h3 {
   justify-content: center;
   text-align: center;
 }
-/* .mid-about {
-  width: 24%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
+
 .right-about {
   padding-right: 10%;
   padding-left: 2rem;
