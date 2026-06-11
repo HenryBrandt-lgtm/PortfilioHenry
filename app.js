@@ -13,6 +13,18 @@ const navLinks = document.getElementById("nav-links");
 hamburger.addEventListener("click", function () {
   navLinks.classList.toggle("open");
 });
+// stäng när man klickar ett val
+navLinks.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    navLinks.classList.remove("open");
+  });
+});
+// stäng när man klickar utanför
+document.addEventListener("click", function (e) {
+  if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+    navLinks.classList.remove("open");
+  }
+});
 
 // =======väder======
 const footer = document.querySelector(".weather-stuff");
