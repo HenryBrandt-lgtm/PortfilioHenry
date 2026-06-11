@@ -13,15 +13,9 @@ const navLinks = document.getElementById("nav-links");
 hamburger.addEventListener("click", function () {
   navLinks.classList.toggle("open");
 });
-// stäng när man klickar ett val
-navLinks.querySelectorAll("a").forEach(function (link) {
-  link.addEventListener("click", function () {
-    navLinks.classList.remove("open");
-  });
-});
-// stäng när man klickar utanför
+// stäng när man klickar vart som helst
 document.addEventListener("click", function (e) {
-  if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+  if (!hamburger.contains(e.target)) {
     navLinks.classList.remove("open");
   }
 });
