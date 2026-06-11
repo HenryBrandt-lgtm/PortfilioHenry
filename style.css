@@ -42,7 +42,7 @@ p {
 body {
   font-family: "jost", "Century Gothic", AppleGothic, sans-serif;
   background: transparent;
-  background-image: url("Images/HeroTree.png");
+  background-image: url("Images/HeroTree.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -161,8 +161,8 @@ h3 {
 #contact,
 #download {
   background-color: var(--green);
-  color: var(--beigeGold);
-  text-shadow: 0 0 2px var(--brown);
+  color: var(--brown);
+  text-shadow: 0 0 5px var(--beigeGold);
 }
 #contact:hover,
 #download:hover {
@@ -172,7 +172,30 @@ h3 {
   background: var(--brown);
   color: var(--beigeGold);
 }
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 80px;
+    align-items: center;
+  }
 
+  .left,
+  .right {
+    width: 80%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    padding-top: 2rem;
+  }
+
+  .overlay-hero {
+    width: 100%;
+  }
+}
 @media (max-width: 480px) {
   .container {
     flex-direction: column-reverse;
@@ -279,7 +302,7 @@ h3 {
   border-radius: 3px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1100px) {
   .hamburger {
     display: flex;
     margin-left: auto;
@@ -381,6 +404,15 @@ h3 {
   font-size: 1.2rem;
 }
 
+@media (max-width: 1024px) {
+  .projects-grid {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-icon img {
+    filter: drop-shadow(0 0 4px var(--green));
+  }
+}
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -444,6 +476,14 @@ h3 {
 .tempDisplay {
   color: var(--beigeGold);
 }
+@media (max-width: 1024px) {
+  #site-footer {
+    gap: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 480px) {
   #site-footer {
     gap: 8px;
@@ -453,8 +493,6 @@ h3 {
 
   #site-footer p {
     padding-right: 0;
-  }
-  .weather-stuff {
   }
 }
 
@@ -490,6 +528,15 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 27rem;
+}
+@media (max-width: 1024px) {
+  .resume-btns {
+    gap: 4rem;
+  }
+
+  .resume-img {
+    width: 80%;
+  }
 }
 @media (max-width: 480px) {
   .resume {
@@ -591,11 +638,29 @@ h3 {
 .right-about .arrow-icon {
   margin-right: 1rem;
   width: 20px;
+  height: 20px;
   transition: transform 0.3s ease;
 }
 .flipped {
   transform: rotate(180deg);
 }
+@media (max-width: 1024px) {
+  #about {
+    flex-direction: column;
+    height: auto;
+    padding-top: 80px;
+    align-items: center;
+  }
+
+  .left-about,
+  .right-about {
+    width: 80%;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 480px) {
   #about {
     flex-direction: column;
