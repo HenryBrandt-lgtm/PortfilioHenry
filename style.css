@@ -84,7 +84,7 @@ body {
   z-index: 2;
   width: 540px;
 }
-.catgif {
+.moving-pic {
   width: 150px;
   position: fixed;
   top: 60px;
@@ -134,7 +134,7 @@ h3 {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
-.hero-btn {
+.btn {
   background: transparent;
   border: 2px solid var(--brown);
   color: var(--brown);
@@ -158,19 +158,21 @@ h3 {
     0 0 10px var(--beigeGold);
   text-decoration: none;
 }
-#contact,
-#download {
+#contact-btn,
+#download-btn {
   background-color: var(--green);
   color: var(--brown);
   text-shadow: 0 0 5px var(--beigeGold);
 }
-#contact:hover,
-#download:hover {
+#contact-btn:hover,
+#download-btn:hover {
   background: var(--brown);
 }
-.hero-btn:hover {
+.btn:hover {
   background: var(--brown);
   color: var(--beigeGold);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px var(--gold);
 }
 @media (max-width: 1024px) {
   .hero-container {
@@ -232,7 +234,7 @@ h3 {
     width: 200px;
   }
 
-  .catgif {
+  .moving-pic {
     display: none;
   }
   .hero-btn {

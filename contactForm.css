@@ -123,8 +123,8 @@ form textarea:focus {
   border-radius: 14px;
 
   background-color: var(--green);
-  color: var(--beigeGold);
-  text-shadow: 0 0 5px var(--brown);
+  color: var(--brown);
+  text-shadow: 0 0 5px var(--beigeGold);
   font-size: 1.2rem;
   font-weight: bold;
   border: 2px solid var(--brown);
