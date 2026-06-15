@@ -95,7 +95,7 @@ body {
   position: relative;
   z-index: 2;
   color: var(--white);
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
   letter-spacing: 2px;
   line-height: 1.1;
@@ -117,11 +117,11 @@ body {
     0 0 20px var(--brown),
     0 0 40px var(--brown);
 }
-h3 {
+.profile-text {
   font-size: 1.5rem;
   color: var(--brown);
   letter-spacing: 2px;
-  line-height: 1.1;
+  line-height: 1.5;
   text-shadow:
     0 0 5px var(--beigeGold),
     0 0 10px var(--beigeGold),
@@ -132,7 +132,7 @@ h3 {
 .profile-pic {
   width: 300px;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .btn {
   background: transparent;
@@ -223,11 +223,11 @@ h3 {
   }
 
   .hero-header {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .hero-name {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .profile-pic {
@@ -274,6 +274,7 @@ h3 {
 .nav-links a {
   color: var(--brown);
   text-decoration: none;
+  font-weight: bold;
   font-size: 20px;
   transition: 0.3s;
 }
@@ -341,7 +342,7 @@ h3 {
   align-items: center;
 }
 .projects-grid {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

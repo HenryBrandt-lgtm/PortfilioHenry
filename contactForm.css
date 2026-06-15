@@ -52,7 +52,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
   z-index: 3;
 }
 .contact-container h2 {
@@ -160,7 +160,7 @@ form textarea:focus {
   .contact-container {
     width: 80%;
     height: auto;
-    padding-top: 0;
+    padding-top: 3rem;
     padding-bottom: 2rem;
   }
   form {
