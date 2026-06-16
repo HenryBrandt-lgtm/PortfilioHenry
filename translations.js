@@ -97,3 +97,17 @@ function setLanguage(lang) {
     el.placeholder = translations[lang][key];
   });
 }
+
+let currentLang = "sv";
+
+function toggleLanguage() {
+  currentLang = currentLang === "sv" ? "en" : "sv";
+  setLanguage(currentLang);
+  document.getElementById("lang-btn").textContent =
+    currentLang === "sv" ? "EN" : "SV";
+}
+document.getElementById("lang-btn").addEventListener("click", toggleLanguage);
+
+document.addEventListener("DOMContentLoaded", function () {
+  setLanguage("sv");
+});
