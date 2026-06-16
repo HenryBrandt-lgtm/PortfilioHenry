@@ -1,3 +1,4 @@
+//ge navbaren en ny class för att kunna styla den vid scroll samt hamburgare
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 50) {
@@ -12,6 +13,12 @@ const navLinks = document.getElementById("nav-links");
 
 hamburger.addEventListener("click", function () {
   navLinks.classList.toggle("open");
+});
+// stäng navmeny när man klickar vart som helst
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target)) {
+    navLinks.classList.remove("open");
+  }
 });
 
 // =======väder======
@@ -32,7 +39,7 @@ async function getWeatherData(city) {
 function displayWeatherInfo(data) {
   const {
     name: city,
-    main: { temp, humidity },
+    main: { temp },
     weather: [{ description, id }],
   } = data;
 
@@ -99,12 +106,12 @@ initWeather();
 
 // =====gif=====
 
-const gif = document.querySelector(".catgif");
+const gif = document.querySelector(".moving-pic");
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   const maxScroll = document.body.scrollHeight - window.innerHeight;
-  const progress = scrollY / maxScroll; // 0 till 1
+  const progress = scrollY / maxScroll;
 
   const centerX = (window.innerWidth - gif.offsetWidth) / 2;
   const leftX = 40;

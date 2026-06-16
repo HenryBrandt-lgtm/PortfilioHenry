@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700&family=Oregano&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contactForm.css" />
   </head>
@@ -33,12 +37,12 @@
     <section class="resume-page">
       <div class="resume">
         <div class="resume-btns">
-          <a href="index.html" class="hero-btn" id="more">Startsidan</a>
+          <a href="index.html" class="btn" id="more">Startsidan</a>
           <a
             href="files/CV Henry Brandt.pdf"
             download
-            class="hero-btn"
-            id="download"
+            class="btn"
+            id="download-btn"
             >Ladda ner</a
           >
         </div>
@@ -57,9 +61,20 @@
           method="POST"
         >
           <h2>Kontakta mig</h2>
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <textarea rows="5" name="Message" required></textarea>
+          <input
+            type="text"
+            name="name"
+            placeholder="Ditt Namn"
+            pattern="[A-Za-zÅÄÖåäö\s]+"
+            required
+          />
+          <input type="email" name="email" placeholder="Din Email" required />
+          <textarea
+            rows="5"
+            name="Message"
+            placeholder="Meddelande"
+            required
+          ></textarea>
           <button type="submit" id="send-email">Skicka</button>
         </form>
       </div>

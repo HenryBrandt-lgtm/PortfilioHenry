@@ -41,23 +41,23 @@ p {
 #contact-me {
   display: flex;
   height: 100vh;
-  background-image: url("Images/footertreeline.png");
+  background-image: url("Images/footertreeline.webp");
   background-size: cover;
   background-position: center;
   justify-content: center;
   align-items: center;
 }
 .contact-container {
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
   z-index: 3;
 }
 .contact-container h2 {
   color: var(--brown);
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Oregano", cursive;
   text-shadow:
     0 0 5px var(--beigeGold),
@@ -66,7 +66,7 @@ p {
 
 form {
   background: rgba(var(--beigeGold-rgb), 0.9);
-  width: 80%;
+  width: 60%;
   height: 50%;
   border-radius: 24px;
   padding: 40px;
@@ -74,7 +74,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 
   box-shadow:
     0 0 5px var(--brown),
@@ -99,6 +99,10 @@ form textarea {
 
   transition: 0.3s ease;
 }
+form textarea {
+  height: 150px;
+  resize: none;
+}
 
 form input::placeholder,
 form textarea::placeholder {
@@ -120,8 +124,8 @@ form textarea:focus {
   border-radius: 14px;
 
   background-color: var(--green);
-  color: var(--beigeGold);
-  text-shadow: 0 0 5px var(--brown);
+  color: var(--brown);
+  text-shadow: 0 0 5px var(--beigeGold);
   font-size: 1.2rem;
   font-weight: bold;
   border: 2px solid var(--brown);
@@ -138,13 +142,34 @@ form textarea:focus {
 
   box-shadow: 0 10px 25px var(--gold);
 }
-
-@media (max-width: 600px) {
-  form {
-    padding: 28px;
+@media (max-width: 1024px) {
+  .contact-container {
+    width: 80%;
+    padding-top: 5rem;
   }
 
-  form h2 {
-    font-size: 1.6rem;
+  .contact-container h2 {
+    font-size: 5rem;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    width: 80%;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  form {
+    padding: 28px;
+    width: 100%;
+  }
+
+  .contact-container h2 {
+    font-size: 3rem;
   }
 }

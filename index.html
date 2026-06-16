@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortfolioHenryBrandt</title>
+    <meta
+      name="description"
+      content="Webbportfolio för Henry Brandt. Här hittar du mina kunskaper inom webbutveckling, tidigare projekt, mitt CV samt ett kontaktformulär."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700&family=Oregano&display=swap"
       rel="stylesheet"
     />
 
@@ -16,265 +24,287 @@
   </head>
   <body>
     <!-- ======================navbar=========== -->
-    <nav class="navbar">
-      <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#hero">Hem</a></li>
-        <li><a href="#about">Om mig</a></li>
-        <li><a href="#projects">Projekt</a></li>
-        <li><a href="#contact-me">Kontakt</a></li>
-        <li><a href="resume.html">CV</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navbar">
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero">Hem</a></li>
+          <li><a href="#about">Om mig</a></li>
+          <li><a href="#projects">Projekt</a></li>
+          <li><a href="#contact-me">Kontakt</a></li>
+          <li><a href="resume.html">CV</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- =========================hero=============== -->
-    <div class="container" id="hero">
-      <div class="left">
-        <div class="profile-card">
-          <img
-            class="profile-pic"
-            src="Images/profilbildRB.png"
-            alt="PictureOfMe"
-          />
+    <main>
+      <div class="hero-container" id="hero">
+        <div class="hero-left">
+          <div class="profile-card">
+            <img
+              class="profile-pic"
+              src="Images/profilbildRB.webp"
+              alt="PictureOfMe"
+            />
 
-          <h3>Arbetsvillig och snabblärd,</h3>
-          <h3>redo för nya erfarenheter!</h3>
-          <div class="buttons">
-            <a href="#contact-me" class="hero-btn" id="contact">Kontakta mig</a>
-            <a href="resume.html" class="hero-btn" id="more">Mitt CV</a>
+            <h3 class="profile-text">Arbetsvillig och snabblärd,</h3>
+            <h3 class="profile-text">redo för nya erfarenheter!</h3>
+            <div class="buttons">
+              <a href="#contact-me" class="btn" id="contact-btn"
+                >Kontakta mig</a
+              >
+              <a href="resume.html" class="btn" id="more">Mitt CV</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="overlay-hero">
+            <h2 class="hero-name">Henry Brandt</h2>
+            <h1 class="hero-header">
+              .NET utvecklare med fullstack kunskaper.
+            </h1>
+            <img
+              class="moving-pic"
+              src="Images/whiteballoon.webp"
+              alt="flying parachutte cat"
+            />
           </div>
         </div>
       </div>
 
-      <div class="right">
-        <div class="overlay-hero">
-          <h2 class="hero-name">Henry Brandt</h2>
-          <h1 class="hero-header">.NET utvecklare med fullstack kunskaper.</h1>
-          <img
-            class="catgif"
-            src="Images/whiteballoon.png"
-            alt="flying parachutte cat"
-          />
-        </div>
-      </div>
-    </div>
-    <!-- ===========avskiljare========== -->
-    <!-- <div class="about-container">
-      <img class="about-picture" id="about-tree" src="Images/" alt="TreeLine" />
-    </div> -->
-    <!-- ==============about================ -->
-    <section id="about">
-      <div class="left-about">
-        <div class="about-container">
-          <img
-            src="Images/organicwhiteleft.png"
-            alt="Organic Båge"
-            class="about-left"
-          />
+      <!-- ==============about================ -->
+      <section id="about">
+        <div class="left-about">
+          <div class="about-container">
+            <img
+              src="Images/organicnewleft.webp"
+              alt="Organic Båge"
+              class="about-left"
+            />
 
-          <h2 class="about-header">
-            Tidigare småföretagare och ballongkonstnär.
-          </h2>
-          <p class="about-text">
-            Jag heter Henry, är 33 år och tidigare delägare i Sickla Party AB –
-            tre butiker inom detaljhandel i Stockholm och Uppsala. Efter 10 år i
-            drift och utveckling av bolaget valde jag att byta riktning och
-            plugga till .NET-utvecklare.
-          </p>
-          <p class="about-text">
-            Genom företagandet har jag byggt upp god erfarenhet av ledarskap,
-            personalansvar och kundrelationer – vilket har gett mig en tydlig
-            bild av vad som krävs av en bra anställd. Jag är van att arbeta i
-            högt tempo och har en stark arbetsmoral.
-          </p>
-        </div>
-      </div>
-      <div class="right-about">
-        <div class="about-container">
-          <img
-            src="Images/organicwhiteright.png"
-            alt="Organic Båge"
-            class="about-right"
-          />
-          <h2 class="about-header">Mina kunskaper</h2>
-          <ul class="areas-list">
-            <li>
-              <a href="#" data-target="C#">
-                <img
-                  src="Images/angle-down-solid-full.svg"
-                  alt="angel down arrow"
-                  class="arrow-icon"
-                />
-                <img src="Images/icons8-c-sharp-logo-100.png" alt="C#-logo" />
-                <span>C#</span></a
-              >
-              <div id="C#" class="info-box">Vad jag kan om C#.</div>
-            </li>
-
-            <li>
-              <a href="#" data-target="SQL">
-                <img
-                  src="Images/angle-down-solid-full.svg"
-                  alt="angel down arrow"
-                  class="arrow-icon"
-                />
-                <img src="Images/icons8-sql-64.png" alt="SQL-logo" />
-                <span>SQL</span></a
-              >
-              <div id="SQL" class="info-box">Vad jag kan om SQl.</div>
-            </li>
-            <li>
-              <a href="#" data-target="HTML">
-                <img
-                  src="Images/angle-down-solid-full.svg"
-                  alt="angel down arrow"
-                  class="arrow-icon"
-                />
-                <img src="Images/html5-brands-solid-full.svg" alt="HTML-logo" />
-                <span>HTML</span></a
-              >
-              <div id="HTML" class="info-box">Vad jag kan om HTML.</div>
-            </li>
-            <li>
-              <a href="#" data-target="CSS">
-                <img
-                  src="Images/angle-down-solid-full.svg"
-                  alt="angel down arrow"
-                  class="arrow-icon"
-                />
-                <img
-                  src="Images/css3-alt-brands-solid-full.svg"
-                  alt="CSS-logo"
-                />
-                <span>CSS</span></a
-              >
-              <div id="CSS" class="info-box">Vad jag kan om CSS.</div>
-            </li>
-            <li>
-              <a href="#" data-target="JS">
-                <img
-                  src="Images/angle-down-solid-full.svg"
-                  alt="angel down arrow"
-                  class="arrow-icon"
-                />
-                <img src="Images/icons8-javascript-100.png" alt="JS-logo" />
-                <span>JavaScript</span></a
-              >
-              <div id="JS" class="info-box">Vad jag kan om JavaScript.</div>
-            </li>
-            <li>
-              <a href="#" data-target="RazorPages">
-                <img
-                  src="Images/angle-down-solid-full.svg"
-                  alt="angel down arrow"
-                  class="arrow-icon"
-                />
-                <img src="Images/.png" alt="RazorPages-logo" />
-                <span>RazorPages</span></a
-              >
-              <div id="RazorPages" class="info-box">
-                Vad jag kan om RazorPages.
-              </div>
-            </li>
-            <li>
-              <a href="#" data-target="React">
-                <img
-                  src="Images/angle-down-solid-full.svg"
-                  alt="angel down arrow"
-                  class="arrow-icon"
-                />
-                <img
-                  src="Images/react-brands-solid-full.svg"
-                  alt="React-logo"
-                />
-                <span>React</span></a
-              >
-              <div id="React" class="info-box">Vad jag kan om React.</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- <div class="right-about"><div class="about-container"></div></div> -->
-    </section>
-    <!-- ========project====== -->
-
-    <section id="projects">
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="Images/tetris-site.png" alt="Projekt 1" />
-          <div class="project-info">
-            <h3>Tetris</h3>
-            <p>
-              Skpade och designade en tetris sida med neon tema. Ett av mina
-              absolut första projekt i HTML, CSS och JS.
+            <h2 class="about-header">
+              Tidigare småföretagare och ballongkonstnär.
+            </h2>
+            <p class="about-text">
+              Jag heter Henry, är 33 år och tidigare delägare i Sickla Party AB
+              med tre butiker inom detaljhandel i Stockholm och Uppsala. Efter
+              10 år i drift och utveckling av bolaget valde jag att byta
+              riktning och plugga till .NET-utvecklare.
             </p>
-            <a
-              href="https://github.com/HenryBrandt-lgtm/Tetris"
-              target="_blank"
-              class="card-icon"
-              ><img src="Images/git.svg" alt="gitHub Icon"
-            /></a>
+            <p class="about-text">
+              Genom företagandet har jag byggt upp god erfarenhet av ledarskap,
+              personalansvar och social kompetens – vilket har gett mig en
+              tydlig bild av vad som krävs av en bra anställd. Jag är van att
+              arbeta i högt tempo och har en stark arbetsmoral.
+            </p>
           </div>
         </div>
+        <div class="right-about">
+          <div class="about-container">
+            <img
+              src="Images/orgnicnewright.webp"
+              alt="Organic Båge"
+              class="about-right"
+            />
+            <h2 class="about-header">Mina kunskaper</h2>
+            <ul class="areas-list">
+              <li>
+                <a href="#" data-target="C#">
+                  <img
+                    src="Images/angle-down-solid-full.svg"
+                    alt="angel down arrow"
+                    class="arrow-icon"
+                  />
+                  <img src="Images/icons8-c-sharp-logo-100.png" alt="C#-logo" />
+                  <span>C#</span></a
+                >
+                <div id="C#" class="info-box">Vad jag kan om C#.</div>
+              </li>
 
-        <div class="project-card">
-          <img src="Images/projekt2.png" alt="Projekt 2" />
-          <div class="project-info">
-            <h3>Projektnamn</h3>
-            <p>Kort beskrivning.</p>
-            <a href="" target="_blank" class="card-icon"
-              ><img src="Images/git.svg" alt="gitHub Icon"
-            /></a>
+              <li>
+                <a href="#" data-target="SQL">
+                  <img
+                    src="Images/angle-down-solid-full.svg"
+                    alt="angel down arrow"
+                    class="arrow-icon"
+                  />
+                  <img src="Images/icons8-sql-64.png" alt="SQL-logo" />
+                  <span>SQL</span></a
+                >
+                <div id="SQL" class="info-box">Vad jag kan om SQl.</div>
+              </li>
+              <li>
+                <a href="#" data-target="HTML">
+                  <img
+                    src="Images/angle-down-solid-full.svg"
+                    alt="angel down arrow"
+                    class="arrow-icon"
+                  />
+                  <img
+                    src="Images/html5-brands-solid-full.svg"
+                    alt="HTML-logo"
+                    class="logo"
+                  />
+                  <span>HTML</span></a
+                >
+                <div id="HTML" class="info-box">Vad jag kan om HTML.</div>
+              </li>
+              <li>
+                <a href="#" data-target="CSS">
+                  <img
+                    src="Images/angle-down-solid-full.svg"
+                    alt="angel down arrow"
+                    class="arrow-icon"
+                  />
+                  <img
+                    src="Images/css3-alt-brands-solid-full.svg"
+                    alt="CSS-logo"
+                    class="logo"
+                  />
+                  <span>CSS</span></a
+                >
+                <div id="CSS" class="info-box">Vad jag kan om CSS.</div>
+              </li>
+              <li>
+                <a href="#" data-target="JS">
+                  <img
+                    src="Images/angle-down-solid-full.svg"
+                    alt="angel down arrow"
+                    class="arrow-icon"
+                  />
+                  <img src="Images/icons8-javascript-100.png" alt="JS-logo" />
+                  <span>JavaScript</span></a
+                >
+                <div id="JS" class="info-box">Vad jag kan om JavaScript.</div>
+              </li>
+              <li>
+                <a href="#" data-target="RazorPages">
+                  <img
+                    src="Images/angle-down-solid-full.svg"
+                    alt="angel down arrow"
+                    class="arrow-icon"
+                  />
+                  <img src="" alt="RazorPages-logo" />
+                  <span>RazorPages</span></a
+                >
+                <div id="RazorPages" class="info-box">
+                  Vad jag kan om RazorPages.
+                </div>
+              </li>
+              <li>
+                <a href="#" data-target="React">
+                  <img
+                    src="Images/angle-down-solid-full.svg"
+                    alt="angel down arrow"
+                    class="arrow-icon"
+                  />
+                  <img
+                    src="Images/react-brands-solid-full.svg"
+                    alt="React-logo"
+                    class="logo"
+                  />
+                  <span>React</span></a
+                >
+                <div id="React" class="info-box">Vad jag kan om React.</div>
+              </li>
+              <li>
+                <a href="#" data-target="Azure">
+                  <img
+                    src="Images/angle-down-solid-full.svg"
+                    alt="angel down arrow"
+                    class="arrow-icon"
+                  />
+                  <img src="Images/azure.svg" alt="Azure-logo" />
+                  <span>Azure</span></a
+                >
+                <div id="Azure" class="info-box">Vad jag kan om Azure.</div>
+              </li>
+            </ul>
           </div>
         </div>
+        <!-- <div class="right-about"><div class="about-container"></div></div> -->
+      </section>
+      <!-- ========project====== -->
 
-        <div class="project-card">
-          <img src="Images/projekt3.png" alt="Projekt 3" />
-          <div class="project-info">
-            <h3>Projektnamn</h3>
-            <p>Kort beskrivning.</p>
-            <a href="#" target="_blank" class="card-icon"
-              ><img src="Images/git.svg" alt="gitHub Icon"
-            /></a>
+      <section id="projects">
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="Images/tetris-site.webp" alt="Bild på tetrisapp" />
+            <div class="project-info">
+              <h3>Tetris</h3>
+              <p>
+                Skpade och designade en tetris sida med neon tema. Ett av mina
+                absolut första projekt i HTML, CSS och JS.
+              </p>
+              <a
+                href="https://github.com/HenryBrandt-lgtm/Tetris"
+                target="_blank"
+                class="card-icon"
+                ><img src="Images/git.svg" alt="gitHub Icon"
+              /></a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="" alt="Projekt 2" />
+            <div class="project-info">
+              <h3>Projektnamn</h3>
+              <p>Kort beskrivning.</p>
+              <a href="" target="_blank" class="card-icon"
+                ><img src="Images/git.svg" alt="gitHub Icon"
+              /></a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="" alt="Projekt 3" />
+            <div class="project-info">
+              <h3>Projektnamn</h3>
+              <p>Kort beskrivning.</p>
+              <a href="#" target="_blank" class="card-icon"
+                ><img src="Images/git.svg" alt="gitHub Icon"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ========contact================ -->
-    <section id="contact-me">
-      <div class="contact-container">
-        <form
-          action="https://formsubmit.co/628b994dd02f0f2e605fde5d60cd582c"
-          method="POST"
-        >
-          <h2>Kontakta mig</h2>
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            pattern="[A-Za-zÅÄÖåäö\s]+"
-            title="Namnet får bara innehålla bokstäver"
-            required
-          />
-          <input type="email" name="email" placeholder="Email" required />
-          <textarea
-            rows="5"
-            name="Message"
-            placeholder="Meddelande"
-            required
-          ></textarea>
-          <button type="submit" id="send-email">Skicka</button>
-        </form>
-      </div>
-    </section>
-
+      <!-- ========contact================ -->
+      <section id="contact-me">
+        <div class="contact-container">
+          <form
+            action="https://formsubmit.co/628b994dd02f0f2e605fde5d60cd582c"
+            method="POST"
+          >
+            <h2>Kontakta mig</h2>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ditt Namn"
+              pattern="[A-Za-zÅÄÖåäö\s]+"
+              title="Namnet får bara innehålla bokstäver"
+              required
+            />
+            <input type="email" name="email" placeholder="Din Email" required />
+            <textarea
+              rows="5"
+              name="Message"
+              placeholder="Meddelande"
+              required
+            ></textarea>
+            <button type="submit" id="send-email">Skicka</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <!-- ====================footer================ -->
     <footer class="footer" id="site-footer">
-      <p>© 2026 Henry Brandt</p>
+      <p>© HenryBrandt</p>
       <div class="footer-links">
         <a
           href="https://www.linkedin.com/in/henry-brandt-07032629a"
