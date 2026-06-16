@@ -32,11 +32,12 @@
           <span></span>
         </button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#hero">Hem</a></li>
-          <li><a href="#about">Om mig</a></li>
-          <li><a href="#projects">Projekt</a></li>
-          <li><a href="#contact-me">Kontakt</a></li>
-          <li><a href="resume.html">CV</a></li>
+          <li><a href="#hero" data-i18n="nav-home">Hem</a></li>
+          <li><a href="#about" data-i18n="nav-about">Om mig</a></li>
+          <li><a href="#projects" data-i18n="nav-projects">Projekt</a></li>
+          <li><a href="#contact-me" data-i18n="nav-contact">Kontakt</a></li>
+          <li><a href="resume.html" data-i18n="nav-cv">CV</a></li>
+          <li><button id="lang-btn">EN</button></li>
         </ul>
       </nav>
     </header>
@@ -51,13 +52,23 @@
               alt="PictureOfMe"
             />
 
-            <h3 class="profile-text">Arbetsvillig och snabblärd,</h3>
-            <h3 class="profile-text">redo för nya erfarenheter!</h3>
+            <h3 class="profile-text" data-i18n="profile-text-1">
+              Arbetsvillig och snabblärd,
+            </h3>
+            <h3 class="profile-text" data-i18n="profile-text-2">
+              redo för nya erfarenheter!
+            </h3>
             <div class="buttons">
-              <a href="#contact-me" class="btn" id="contact-btn"
+              <a
+                href="#contact-me"
+                class="btn"
+                id="contact-btn"
+                data-i18n="contact-btn"
                 >Kontakta mig</a
               >
-              <a href="resume.html" class="btn" id="more">Mitt CV</a>
+              <a href="resume.html" class="btn" id="more" data-i18n="cv-btn"
+                >Mitt CV</a
+              >
             </div>
           </div>
         </div>
@@ -65,7 +76,7 @@
         <div class="hero-right">
           <div class="overlay-hero">
             <h2 class="hero-name">Henry Brandt</h2>
-            <h1 class="hero-header">
+            <h1 class="hero-header" data-i18n="hero-header">
               .NET utvecklare med fullstack kunskaper.
             </h1>
             <img
@@ -87,18 +98,18 @@
               class="about-left"
             />
 
-            <h2 class="about-header">
+            <h2 class="about-header" data-i18n="about-header">
               Tidigare småföretagare och ballongkonstnär.
             </h2>
-            <p class="about-text">
+            <p class="about-text" data-i18n="about-text-1">
               Jag heter Henry, är 33 år och tidigare delägare i Sickla Party AB
               med tre butiker inom detaljhandel i Stockholm och Uppsala. Efter
               10 år i drift och utveckling av bolaget valde jag att byta
               riktning och plugga till .NET-utvecklare.
             </p>
-            <p class="about-text">
+            <p class="about-text" data-i18n="about-text-2">
               Genom företagandet har jag byggt upp god erfarenhet av ledarskap,
-              personalansvar och social kompetens – vilket har gett mig en
+              personalansvar och social kompetens - vilket har gett mig en
               tydlig bild av vad som krävs av en bra anställd. Jag är van att
               arbeta i högt tempo och har en stark arbetsmoral.
             </p>
@@ -111,7 +122,9 @@
               alt="Organic Båge"
               class="about-right"
             />
-            <h2 class="about-header">Mina kunskaper</h2>
+            <h2 class="about-header" data-i18n="skills-header">
+              Mina kunskaper
+            </h2>
             <ul class="areas-list">
               <li>
                 <a href="#" data-target="C#">
@@ -123,9 +136,10 @@
                   <img src="Images/icons8-c-sharp-logo-100.png" alt="C#-logo" />
                   <span>C#</span></a
                 >
-                <div id="C#" class="info-box">Vad jag kan om C#.</div>
+                <div id="C#" class="info-box" data-i18n="info-box">
+                  Vad jag kan om C#.
+                </div>
               </li>
-
               <li>
                 <a href="#" data-target="SQL">
                   <img
@@ -134,9 +148,11 @@
                     class="arrow-icon"
                   />
                   <img src="Images/icons8-sql-64.png" alt="SQL-logo" />
-                  <span>SQL</span></a
-                >
-                <div id="SQL" class="info-box">Vad jag kan om SQl.</div>
+                  <span>SQL</span>
+                </a>
+                <div id="SQL" class="info-box" data-i18n="skill-sql">
+                  Vad jag kan om SQL.
+                </div>
               </li>
               <li>
                 <a href="#" data-target="HTML">
@@ -150,9 +166,11 @@
                     alt="HTML-logo"
                     class="logo"
                   />
-                  <span>HTML</span></a
-                >
-                <div id="HTML" class="info-box">Vad jag kan om HTML.</div>
+                  <span>HTML</span>
+                </a>
+                <div id="HTML" class="info-box" data-i18n="skill-html">
+                  Vad jag kan om HTML.
+                </div>
               </li>
               <li>
                 <a href="#" data-target="CSS">
@@ -166,9 +184,11 @@
                     alt="CSS-logo"
                     class="logo"
                   />
-                  <span>CSS</span></a
-                >
-                <div id="CSS" class="info-box">Vad jag kan om CSS.</div>
+                  <span>CSS</span>
+                </a>
+                <div id="CSS" class="info-box" data-i18n="skill-css">
+                  Vad jag kan om CSS.
+                </div>
               </li>
               <li>
                 <a href="#" data-target="JS">
@@ -178,9 +198,11 @@
                     class="arrow-icon"
                   />
                   <img src="Images/icons8-javascript-100.png" alt="JS-logo" />
-                  <span>JavaScript</span></a
-                >
-                <div id="JS" class="info-box">Vad jag kan om JavaScript.</div>
+                  <span>JavaScript</span>
+                </a>
+                <div id="JS" class="info-box" data-i18n="skill-js">
+                  Vad jag kan om JavaScript.
+                </div>
               </li>
               <li>
                 <a href="#" data-target="RazorPages">
@@ -190,9 +212,9 @@
                     class="arrow-icon"
                   />
                   <img src="" alt="RazorPages-logo" />
-                  <span>RazorPages</span></a
-                >
-                <div id="RazorPages" class="info-box">
+                  <span>RazorPages</span>
+                </a>
+                <div id="RazorPages" class="info-box" data-i18n="skill-razor">
                   Vad jag kan om RazorPages.
                 </div>
               </li>
@@ -208,9 +230,11 @@
                     alt="React-logo"
                     class="logo"
                   />
-                  <span>React</span></a
-                >
-                <div id="React" class="info-box">Vad jag kan om React.</div>
+                  <span>React</span>
+                </a>
+                <div id="React" class="info-box" data-i18n="skill-react">
+                  Vad jag kan om React.
+                </div>
               </li>
               <li>
                 <a href="#" data-target="Azure">
@@ -220,9 +244,11 @@
                     class="arrow-icon"
                   />
                   <img src="Images/azure.svg" alt="Azure-logo" />
-                  <span>Azure</span></a
-                >
-                <div id="Azure" class="info-box">Vad jag kan om Azure.</div>
+                  <span>Azure</span>
+                </a>
+                <div id="Azure" class="info-box" data-i18n="skill-azure">
+                  Vad jag kan om Azure.
+                </div>
               </li>
             </ul>
           </div>
@@ -237,8 +263,8 @@
             <img src="Images/tetris-site.webp" alt="Bild på tetrisapp" />
             <div class="project-info">
               <h3>Tetris</h3>
-              <p>
-                Skpade och designade en tetris sida med neon tema. Ett av mina
+              <p data-i18n="project-tetris">
+                Skapade och designade en tetris sida med neon tema. Ett av mina
                 absolut första projekt i HTML, CSS och JS.
               </p>
               <a
@@ -281,30 +307,44 @@
             action="https://formsubmit.co/628b994dd02f0f2e605fde5d60cd582c"
             method="POST"
           >
-            <h2>Kontakta mig</h2>
+            <h2 data-i18n="contact-header">Kontakta mig</h2>
             <input
               type="text"
               name="name"
+              data-i18n-placeholder="placeholder-name"
               placeholder="Ditt Namn"
               pattern="[A-Za-zÅÄÖåäö\s]+"
               title="Namnet får bara innehålla bokstäver"
               required
             />
-            <input type="email" name="email" placeholder="Din Email" required />
+            <input
+              type="email"
+              name="email"
+              data-i18n-placeholder="placeholder-email"
+              placeholder="Din Email"
+              required
+            />
             <textarea
               rows="5"
               name="Message"
+              data-i18n-placeholder="placeholder-message"
               placeholder="Meddelande"
               required
             ></textarea>
-            <button type="submit" id="send-email">Skicka</button>
+            <p class="gdpr-text" data-i18n="gdpr-text">
+              Dina uppgifter lagras inte och används endast för att besvara ditt
+              meddelande.
+            </p>
+            <button type="submit" id="send-email" data-i18n="send-btn">
+              Skicka
+            </button>
           </form>
         </div>
       </section>
     </main>
     <!-- ====================footer================ -->
     <footer class="footer" id="site-footer">
-      <p>© HenryBrandt</p>
+      <p>©HenryBrandt</p>
       <div class="footer-links">
         <a
           href="https://www.linkedin.com/in/henry-brandt-07032629a"
@@ -321,6 +361,7 @@
       </div>
       <div class="weather-stuff"></div>
     </footer>
-    <script src="app.js" charset="utf-8"></script>
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

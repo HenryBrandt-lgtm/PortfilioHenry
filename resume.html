@@ -26,23 +26,29 @@
         <span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="#contact-me">Kontakt</a></li>
-        <li><a href="index.html#about">Om mig</a></li>
-        <li><a href="index.html#projects">Projekt</a></li>
-        <li><a href="resume.html">CV</a></li>
+        <li><a href="index.html" data-i18n="nav-home">Hem</a></li>
+        <li><a href="#contact-me" data-i18n="nav-contact">Kontakt</a></li>
+        <li><a href="index.html#about" data-i18n="nav-about">Om mig</a></li>
+        <li>
+          <a href="index.html#projects" data-i18n="nav-projects">Projekt</a>
+        </li>
+        <li><a href="resume.html" data-i18n="nav-cv">CV</a></li>
+        <li><button id="lang-btn">EN</button></li>
       </ul>
     </nav>
     <!-- ========resume===== -->
     <section class="resume-page">
       <div class="resume">
         <div class="resume-btns">
-          <a href="index.html" class="btn" id="more">Startsidan</a>
+          <a href="index.html" class="btn" id="more" data-i18n="home-btn"
+            >Startsidan</a
+          >
           <a
             href="files/CV Henry Brandt.pdf"
             download
             class="btn"
             id="download-btn"
+            data-i18n="download-btn"
             >Ladda ner</a
           >
         </div>
@@ -60,28 +66,42 @@
           action="https://formsubmit.co/628b994dd02f0f2e605fde5d60cd582c"
           method="POST"
         >
-          <h2>Kontakta mig</h2>
+          <h2 data-i18n="contact-header">Kontakta mig</h2>
           <input
             type="text"
             name="name"
+            data-i18n-placeholder="placeholder-name"
             placeholder="Ditt Namn"
             pattern="[A-Za-zÅÄÖåäö\s]+"
             required
           />
-          <input type="email" name="email" placeholder="Din Email" required />
+          <input
+            type="email"
+            name="email"
+            data-i18n-placeholder="placeholder-email"
+            placeholder="Din Email"
+            required
+          />
           <textarea
             rows="5"
             name="Message"
+            data-i18n-placeholder="placeholder-message"
             placeholder="Meddelande"
             required
           ></textarea>
-          <button type="submit" id="send-email">Skicka</button>
+          <p class="gdpr-text" data-i18n="gdpr-text">
+            Dina uppgifter lagras inte och används endast för att besvara ditt
+            meddelande.
+          </p>
+          <button type="submit" id="send-email" data-i18n="send-btn">
+            Skicka
+          </button>
         </form>
       </div>
     </section>
     <!-- ====================footer================ -->
     <footer class="footer" id="site-footer">
-      <p>© 2026 Henry Brandt</p>
+      <p>©HenryBrandt</p>
       <div class="footer-links">
         <a
           href="https://www.linkedin.com/in/henry-brandt-07032629a"
@@ -98,6 +118,7 @@
       </div>
       <div class="weather-stuff"></div>
     </footer>
-    <script src="app.js" charset="utf-8"></script>
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

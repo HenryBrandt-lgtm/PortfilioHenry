@@ -169,6 +169,10 @@ form textarea:focus {
     width: 100%;
   }
 
+  .gdpr-text {
+    font-size: 0.8rem;
+  }
+
   .contact-container h2 {
     font-size: 3rem;
   }
