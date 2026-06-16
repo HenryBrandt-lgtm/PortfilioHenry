@@ -44,7 +44,7 @@ const translations = {
   en: {
     //navtext
     "nav-home": "Home",
-    "nav-about": "About me",
+    "nav-about": "About",
     "nav-projects": "Projects",
     "nav-contact": "Contact",
     "nav-cv": "CV",
@@ -60,7 +60,7 @@ const translations = {
       "My name is Henry, I'm 33 years old and a former co-owner of Sickla Party AB with three retail stores in Stockholm and Uppsala. After 10 years of running and developing the company, I decided to change direction and study to become a .NET developer.",
     "about-text-2":
       "Through running a business I've built up solid experience in leadership, staff management and social skills - which has given me a clear picture of what it takes to be a great employee. I'm used to working at a fast pace and have a strong work ethic.",
-    "skills-header": "My skills",
+    "skills-header": "Skills i've learned",
     //info boxen med skills
     "info-box": "What i know about C#",
     "skill-sql": "What I know about SQL.",
@@ -80,7 +80,7 @@ const translations = {
     "placeholder-message": "Message",
     "send-btn": "Send",
     //resume sidan
-    "home-btn": "Home page",
+    "home-btn": "Homepage",
     "download-btn": "Download",
   },
 };

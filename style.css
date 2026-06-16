@@ -534,7 +534,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 27rem;
+  gap: 33.5rem;
 }
 @media (max-width: 1024px) {
   .resume-btns {
