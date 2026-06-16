@@ -98,16 +98,19 @@ function setLanguage(lang) {
   });
 }
 
-let currentLang = "sv";
+let currentLang = localStorage.getItem("lang") || "sv";
 
 function toggleLanguage() {
   currentLang = currentLang === "sv" ? "en" : "sv";
+  localStorage.setItem("lang", currentLang);
   setLanguage(currentLang);
   document.getElementById("lang-btn").textContent =
     currentLang === "sv" ? "EN" : "SV";
 }
-document.getElementById("lang-btn").addEventListener("click", toggleLanguage);
 
 document.addEventListener("DOMContentLoaded", function () {
-  setLanguage("sv");
+  setLanguage(currentLang);
+  document.getElementById("lang-btn").textContent =
+    currentLang === "sv" ? "EN" : "SV";
+  document.getElementById("lang-btn").addEventListener("click", toggleLanguage);
 });
