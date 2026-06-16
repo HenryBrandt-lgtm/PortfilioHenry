@@ -158,16 +158,3 @@ document.querySelectorAll(".areas-list a").forEach(function (link) {
     }
   });
 });
-
-// ============språkbyte==========
-function setLanguage(lang) {
-  document.querySelectorAll("[data-i18n]").forEach(function (el) {
-    const key = el.getAttribute("data-i18n");
-    el.textContent = translations[lang][key];
-  });
-
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
-    const key = el.getAttribute("data-i18n-placeholder");
-    el.placeholder = translations[lang][key];
-  });
-}
