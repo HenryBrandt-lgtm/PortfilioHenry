@@ -1,0 +1,30 @@
+{
+  "sv": {
+    // navtext
+    "nav-home": "Hem",
+    "nav-about": "Om mig",
+    "nav-projects": "Projekt",
+    "nav-contact": "Kontakt",
+    "nav-cv": "CV",
+    //herocard
+    "profile-text-1": "Arbetsvillig och snabblärd,",
+    "profile-text-2": "redo för nya erfarenheter!",
+    "contact-btn": "Kontakta mig",
+    "cv-btn": "Mitt CV",
+    "hero-header": ".NET utvecklare med fullstack kunskaper."
+  },
+  "en": {
+    //navtext
+    "nav-home": "Home",
+    "nav-about": "About me",
+    "nav-projects": "Projects",
+    "nav-contact": "Contact",
+    "nav-cv": "CV",
+    //herocard
+    "profile-text-1": "Arbetsvillig och snabblärd,",
+    "profile-text-2": "redo för nya erfarenheter!",
+    "contact-btn": "Kontakta mig",
+    "cv-btn": "Mitt CV",
+    "hero-header": ".NET developer with fullstack skills."
+  }
+}

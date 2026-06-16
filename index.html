@@ -32,11 +32,11 @@
           <span></span>
         </button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#hero">Hem</a></li>
-          <li><a href="#about">Om mig</a></li>
-          <li><a href="#projects">Projekt</a></li>
-          <li><a href="#contact-me">Kontakt</a></li>
-          <li><a href="resume.html">CV</a></li>
+          <li><a href="#hero" data-i18n="nav-home">Hem</a></li>
+          <li><a href="#about" data-i18n="nav-about">Om mig</a></li>
+          <li><a href="#projects" data-i18n="nav-projects">Projekt</a></li>
+          <li><a href="#contact-me" data-i18n="nav-contact">Kontakt</a></li>
+          <li><a href="resume.html" data-i18n="nav-cv">CV</a></li>
         </ul>
       </nav>
     </header>
@@ -51,13 +51,23 @@
               alt="PictureOfMe"
             />
 
-            <h3 class="profile-text">Arbetsvillig och snabblärd,</h3>
-            <h3 class="profile-text">redo för nya erfarenheter!</h3>
+            <h3 class="profile-text" data-i18n="profile-text-1">
+              Arbetsvillig och snabblärd,
+            </h3>
+            <h3 class="profile-text" data-i18n="profile-text-2">
+              redo för nya erfarenheter!
+            </h3>
             <div class="buttons">
-              <a href="#contact-me" class="btn" id="contact-btn"
+              <a
+                href="#contact-me"
+                class="btn"
+                id="contact-btn"
+                data-i18n="contact-btn"
                 >Kontakta mig</a
               >
-              <a href="resume.html" class="btn" id="more">Mitt CV</a>
+              <a href="resume.html" class="btn" id="more" data-i18n="cv-btn"
+                >Mitt CV</a
+              >
             </div>
           </div>
         </div>
@@ -65,7 +75,7 @@
         <div class="hero-right">
           <div class="overlay-hero">
             <h2 class="hero-name">Henry Brandt</h2>
-            <h1 class="hero-header">
+            <h1 class="hero-header" data-i18n="hero-header">
               .NET utvecklare med fullstack kunskaper.
             </h1>
             <img
