@@ -13,11 +13,13 @@ const navLinks = document.getElementById("nav-links");
 
 hamburger.addEventListener("click", function () {
   navLinks.classList.toggle("open");
+  document.getElementById("lang-btn").classList.toggle("open");
 });
 // stäng navmeny när man klickar vart som helst
 document.addEventListener("click", function (e) {
   if (!hamburger.contains(e.target)) {
     navLinks.classList.remove("open");
+    document.getElementById("lang-btn").classList.remove("open");
   }
 });
 

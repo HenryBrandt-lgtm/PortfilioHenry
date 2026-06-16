@@ -237,8 +237,8 @@ body {
   .moving-pic {
     display: none;
   }
-  .hero-btn {
-    margin-bottom: 0.5rem;
+  .btn {
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -276,10 +276,11 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+#lang-btn:hover {
   color: var(--green);
 }
 
@@ -287,6 +288,11 @@ body {
   background: rgba(var(--beigeGold-rgb), 0.4);
 }
 
+#lang-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 .hamburger {
   display: none;
   flex-direction: column;
@@ -313,6 +319,8 @@ body {
   .navbar {
     padding: 10px 20px;
     width: 5%;
+    left: 10px;
+    transform: none;
   }
   .nav-links {
     display: none;
@@ -320,8 +328,7 @@ body {
     flex-direction: column;
     position: absolute;
     top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 80px;
     font-weight: bold;
     background: rgba(var(--beigeGold-rgb), 1);
