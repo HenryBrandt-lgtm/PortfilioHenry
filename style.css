@@ -227,11 +227,14 @@ body {
   }
 
   .hero-name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .profile-pic {
     width: 200px;
+  }
+  .profile-text {
+    font-size: 1.1rem;
   }
 
   .moving-pic {
@@ -569,7 +572,7 @@ body {
   }
 }
 
-/* =========about me======== */
+/* =========about ======== */
 
 #about {
   height: 100vh;
@@ -579,7 +582,7 @@ body {
   justify-content: center;
   color: var(--brown);
 }
-#about h2 {
+.about-header {
   font-size: 2.5rem;
 }
 #about p {
@@ -686,6 +689,9 @@ body {
     height: auto;
     padding-top: 40px;
     align-items: center;
+  }
+  .about-header {
+    font-size: 2rem;
   }
   .left-about,
   .right-about {

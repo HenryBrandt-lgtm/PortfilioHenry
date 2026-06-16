@@ -37,6 +37,8 @@ const translations = {
     "placeholder-email": "Din Email",
     "placeholder-message": "Meddelande",
     "send-btn": "Skicka",
+    "gdpr-text":
+      "Dina uppgifter lagras inte och används endast för att besvara ditt meddelande.",
     //resume sidan
     "home-btn": "Startsidan",
     "download-btn": "Ladda ner",
@@ -79,6 +81,8 @@ const translations = {
     "placeholder-email": "Your Email",
     "placeholder-message": "Message",
     "send-btn": "Send",
+    "gdpr-text":
+      "Your details are not stored and will only be used to respond to your message.",
     //resume sidan
     "home-btn": "Homepage",
     "download-btn": "Download",
