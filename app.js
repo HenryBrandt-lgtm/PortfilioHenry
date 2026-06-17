@@ -156,7 +156,6 @@ document.querySelectorAll(".areas-list a").forEach(function (link) {
       //ger pilen ny class
       const arrow = this.querySelector(".arrow-icon");
       arrow.classList.toggle("flipped");
-      console.log("före:", arrow.classList);
     }
   });
 });
