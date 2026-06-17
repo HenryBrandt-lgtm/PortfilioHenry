@@ -451,6 +451,7 @@ body {
   box-sizing: border-box;
   position: fixed;
   z-index: 4;
+  height: 2rem;
   bottom: 0px;
   width: 100%;
   display: flex;
@@ -648,6 +649,9 @@ body {
 .areas-list {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .areas-list li {

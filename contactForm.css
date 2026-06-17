@@ -102,11 +102,15 @@ form textarea {
 form textarea {
   height: 150px;
   resize: none;
+  font-family: "jost", "Century Gothic", AppleGothic, sans-serif;
+  font-size: 1rem;
 }
 
 form input::placeholder,
 form textarea::placeholder {
   color: var(--white);
+  font-family: "jost", "Century Gothic", AppleGothic, sans-serif;
+  font-size: 1rem;
 }
 
 form input:focus,
