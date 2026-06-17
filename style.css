@@ -108,7 +108,7 @@ body {
 }
 
 .hero-name {
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   color: var(--white);
   text-shadow:
@@ -116,6 +116,7 @@ body {
     0 0 10px var(--brown),
     0 0 20px var(--brown),
     0 0 40px var(--brown);
+  font-family: "Oregano", cursive;
 }
 .profile-text {
   font-size: 1.5rem;
@@ -227,7 +228,7 @@ body {
   }
 
   .hero-name {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .profile-pic {
