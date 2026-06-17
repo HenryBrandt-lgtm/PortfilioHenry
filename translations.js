@@ -20,7 +20,7 @@ const translations = {
       "Genom företagandet har jag byggt upp god erfarenhet av ledarskap, personalansvar och social kompetens - vilket har gett mig en tydlig bild av vad som krävs av en bra anställd. Jag är van att arbeta i högt tempo och har en stark arbetsmoral.",
     "skills-header": "Mina kunskaper",
     //info-boxen med skills
-    "info-box": "Vad jag kan om C#",
+    "skill-csharp": "Vad jag kan om C#",
     "skill-sql": "Vad jag kan om SQL.",
     "skill-html": "Vad jag kan om HTML.",
     "skill-css": "Vad jag kan om CSS.",
@@ -64,7 +64,7 @@ const translations = {
       "Through running a business I've built up solid experience in leadership, staff management and social skills - which has given me a clear picture of what it takes to be a great employee. I'm used to working at a fast pace and have a strong work ethic.",
     "skills-header": "Skills i've learned",
     //info boxen med skills
-    "info-box": "What i know about C#",
+    "skill-csharp": "What i know about C#",
     "skill-sql": "What I know about SQL.",
     "skill-html": "What I know about HTML.",
     "skill-css": "What I know about CSS.",
