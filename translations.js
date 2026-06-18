@@ -25,7 +25,7 @@ const translations = {
     "skill-html": "Vad jag kan om HTML.",
     "skill-css": "Vad jag kan om CSS.",
     "skill-js": "Vad jag kan om JavaScript.",
-    "skill-razor": "Vad jag kan om RazorPages.",
+    "skill-razorpages": "Vad jag kan om RazorPages.",
     "skill-react": "Vad jag kan om React.",
     "skill-azure": "Vad jag kan om Azure.",
     //project
@@ -69,7 +69,7 @@ const translations = {
     "skill-html": "What I know about HTML.",
     "skill-css": "What I know about CSS.",
     "skill-js": "What I know about JavaScript.",
-    "skill-razor": "What I know about RazorPages.",
+    "skill-razorpages": "What I know about RazorPages.",
     "skill-react": "What I know about React.",
     "skill-azure": "What I know about Azure.",
     //project
