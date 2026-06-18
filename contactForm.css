@@ -147,9 +147,13 @@ form textarea:focus {
   box-shadow: 0 10px 25px var(--gold);
 }
 @media (max-width: 1024px) {
+  #contact-me {
+    height: auto;
+  }
   .contact-container {
     width: 80%;
     padding-top: 5rem;
+    margin-bottom: 2rem;
   }
 
   .contact-container h2 {
