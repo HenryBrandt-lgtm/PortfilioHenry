@@ -20,9 +20,9 @@ A personal portfolio website built with HTML, CSS, and vanilla JavaScript.
 
 Clone the repo and open `index.html` in your browser. No build step required.
 
-Add your API keys in `app.js`:
-- `EMAILJS_PUBLIC_KEY`
-- `OPENWEATHERMAP_API_KEY`
+Add your API keys:
+- `app.js` – `OPENWEATHERMAP_API_KEY`
+- `index.html` – EmailJS public key
 
 ## Pages
 
