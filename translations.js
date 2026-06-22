@@ -108,17 +108,21 @@ function setLanguage(lang) {
 
 let currentLang = localStorage.getItem("lang") || "sv";
 
+function updateLangIcon() {
+  const icon = document.getElementById("lang-icon");
+  icon.src = currentLang === "sv" ? "images/uk.svg" : "images/sweden.svg";
+  icon.alt = currentLang === "sv" ? "EN" : "SV";
+}
+
 function toggleLanguage() {
   currentLang = currentLang === "sv" ? "en" : "sv";
   localStorage.setItem("lang", currentLang);
   setLanguage(currentLang);
-  document.getElementById("lang-btn").textContent =
-    currentLang === "sv" ? "EN" : "SV";
+  updateLangIcon();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   setLanguage(currentLang);
-  document.getElementById("lang-btn").textContent =
-    currentLang === "sv" ? "EN" : "SV";
+  updateLangIcon();
   document.getElementById("lang-btn").addEventListener("click", toggleLanguage);
 });

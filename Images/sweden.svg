@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+<defs><clipPath id="c"><rect width="320" height="200" rx="20" ry="20"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="320" height="200" fill="#006AA7"/>
+<rect x="90" width="30" height="200" fill="#FECC00"/>
+<rect y="85" width="320" height="30" fill="#FECC00"/>
+</g></svg>
