@@ -370,6 +370,7 @@ body {
 .about-header {
   font-size: 2.5rem;
 }
+
 #about p {
   font-size: 1.2rem;
 }
@@ -694,7 +695,7 @@ body {
   box-sizing: border-box;
   position: fixed;
   z-index: 4;
-  height: 2rem;
+  height: 2.5rem;
   bottom: 0px;
   width: 100%;
   display: flex;
@@ -710,7 +711,7 @@ body {
 }
 
 #site-footer p {
-  font-size: 13px;
+  font-size: 15px;
   padding-right: 26px;
 }
 
@@ -720,16 +721,10 @@ body {
   gap: 24px;
   margin-left: 3rem;
 }
-
-.footer-links a {
-  color: var(--brown);
-  font-size: 13px;
-  text-decoration: none;
+.footer-icon {
+  width: 40px;
 }
 
-.footer-links a:hover {
-  color: white;
-}
 .cityDisplay,
 .tempDisplay {
   color: var(--beigeGold);
@@ -748,11 +743,13 @@ body {
     padding: 10px;
     text-align: center;
   }
+  .footer-links {
+    gap: 24px;
+    margin-left: 1rem;
+  }
 
   #site-footer p {
+    font-size: 10px;
     padding-right: 0;
-  }
-  .footer-links a {
-    margin-left: 0;
   }
 }
