@@ -53,7 +53,7 @@ const translations = {
     "nav-contact": "Contact",
     "nav-cv": "CV",
     //herocard
-    "profile-text-1": "Hardworking and a fast learner,",
+    "profile-text-1": "Hardworking & a fast learner,",
     "profile-text-2": "ready for new experiences!",
     "contact-btn": "Contact me",
     "cv-btn": "My resume",
