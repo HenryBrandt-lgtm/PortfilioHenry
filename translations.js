@@ -112,6 +112,14 @@ function updateLangIcon() {
   const icon = document.getElementById("lang-icon");
   icon.src = currentLang === "sv" ? "images/uk.svg" : "images/sweden.svg";
   icon.alt = currentLang === "sv" ? "EN" : "SV";
+
+  const resume = document.getElementById("resume-img");
+  if (resume) {
+    resume.src =
+      currentLang === "sv"
+        ? "Images/CVHenryBrandtEN.webp"
+        : "Images/CVHenryBrandt.webp";
+  }
 }
 
 function toggleLanguage() {
