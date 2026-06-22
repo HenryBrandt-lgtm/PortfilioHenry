@@ -704,15 +704,19 @@ body {
   padding-left: 30px;
   background: linear-gradient(
     to right,
-    var(--beigeGold),
-    var(--beigeGold),
-    var(--brown)
+    rgba(var(--beigeGold-rgb), 0.8),
+    rgba(var(--beigeGold-rgb), 0.8),
+    rgba(var(--brown-rgb), 0.8)
   );
 }
 
 #site-footer p {
   font-size: 15px;
   padding-right: 26px;
+}
+.footer-icon:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 6px var(--green));
 }
 
 .footer-links {
