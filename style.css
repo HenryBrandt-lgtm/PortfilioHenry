@@ -483,6 +483,7 @@ body {
   text-shadow:
     0 0 5px var(--brown),
     0 0 10px var(--brown);
+  transition: opacity 1.5s ease;
 }
 
 @media (max-width: 1024px) {
@@ -625,6 +626,20 @@ body {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+  @keyframes pulseGreen {
+    0%,
+    100% {
+      filter: drop-shadow(0 0 4px var(--green));
+    }
+    50% {
+      filter: drop-shadow(0 0 6px var(--green))
+        drop-shadow(0 0 12px var(--green));
+    }
+  }
+
+  .card-icon img {
+    animation: pulseGreen 3s ease-in-out infinite;
+  }
 }
 @media (max-width: 480px) {
   #projects {
@@ -635,9 +650,6 @@ body {
   .projects-grid {
     width: 80%;
     grid-template-columns: 1fr;
-  }
-  .card-icon img {
-    filter: drop-shadow(0 0 4px var(--green));
   }
 }
 

@@ -28,8 +28,6 @@ const translations = {
     "skill-razorpages": "Vad jag kan om RazorPages.",
     "skill-react": "Vad jag kan om React.",
     "skill-azure": "Vad jag kan om Azure.",
-    //testamonials
-    "testamonials-text": '"Riktigt cool kille" -Hanna',
     //project
     "project-tetris":
       "Skapade och designade en tetris sida med neon tema. Ett av mina absolut första projekt i HTML, CSS och JS.",
@@ -74,8 +72,6 @@ const translations = {
     "skill-razorpages": "What I know about RazorPages.",
     "skill-react": "What I know about React.",
     "skill-azure": "What I know about Azure.",
-    //testamonials
-    "testamonials-text": '"Real fine lad" -Hanna',
     //project
     "project-tetris":
       "Created and designed a Tetris site with a neon theme. One of my very first projects in HTML, CSS and JS.",
@@ -91,6 +87,19 @@ const translations = {
     "home-btn": "Homepage",
     "download-btn": "Download",
   },
+};
+// =======testamonials=====
+const testimonials = {
+  sv: [
+    '"Riktigt cool kille" - Hanna',
+    '"Bästa chefen jag någonsin kommer ha" - Romee',
+    '"Otroligt lösningsorienterad" - Åsa',
+  ],
+  en: [
+    '"Real fine lad" - Hanna',
+    '"The best boss I\'ll ever have" - Rommee',
+    '"Incredibly solution-oriented" - Åsa',
+  ],
 };
 
 // ============språkbyte==========
@@ -117,8 +126,8 @@ function updateLangIcon() {
   if (resume) {
     resume.src =
       currentLang === "sv"
-        ? "Images/CVHenryBrandtEN.webp"
-        : "Images/CVHenryBrandt.webp";
+        ? "Images/CVHenryBrandt.webp"
+        : "Images/CVHenryBrandtEN.webp";
   }
 }
 
@@ -133,4 +142,23 @@ document.addEventListener("DOMContentLoaded", function () {
   setLanguage(currentLang);
   updateLangIcon();
   document.getElementById("lang-btn").addEventListener("click", toggleLanguage);
+
+  // byter testaminial
+  const testamonial = document.querySelector(".testamonials");
+  let currentIndex = 0;
+
+  testamonial.textContent = testimonials[currentLang][currentIndex];
+
+  setInterval(() => {
+    testamonial.style.opacity = "0";
+
+    setTimeout(() => {
+      currentIndex++;
+      if (currentIndex === testimonials[currentLang].length) {
+        currentIndex = 0;
+      }
+      testamonial.textContent = testimonials[currentLang][currentIndex];
+      testamonial.style.opacity = "1";
+    }, 1500);
+  }, 4000);
 });

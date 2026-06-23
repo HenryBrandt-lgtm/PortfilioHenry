@@ -143,7 +143,7 @@ document.querySelectorAll(".areas-list a").forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const key = this.getAttribute("data-target");
-    const infoKey = "skill-" + key.toLowerCase(); // matchar dina nycklar, t.ex. "skill-sql"
+    const infoKey = "skill-" + key.toLowerCase(); // matchar mina språk nycklar, t.ex. "skill-sql"
     const infoDisplay = document.querySelector(".info-display");
 
     // om man klickar samma igen, stäng
