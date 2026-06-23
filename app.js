@@ -133,29 +133,34 @@ window.addEventListener("scroll", () => {
 
 //======visa och dölja kunskapsinfo======
 
+function showInfo(key) {
+  const infoDisplay = document.querySelector(".info-display");
+  infoDisplay.textContent = translations[currentLang][key];
+  infoDisplay.setAttribute("data-i18n", key); // så den uppdateras vid språkbyte
+}
+
 document.querySelectorAll(".areas-list a").forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
+    const key = this.getAttribute("data-target");
+    const infoKey = "skill-" + key.toLowerCase(); // matchar mina språk nycklar, t.ex. "skill-sql"
+    const infoDisplay = document.querySelector(".info-display");
 
-    const target = document.getElementById(this.getAttribute("data-target"));
-    const isVisible = target.style.display === "block";
-
-    // dölj alla först
-    document.querySelectorAll(".info-box").forEach(function (box) {
-      box.style.display = "none";
-    });
-    //nollställ pilar
-    document.querySelectorAll(".arrow-icon").forEach(function (arrow) {
-      arrow.classList.remove("flipped");
-    });
-
-    // visa bara om den inte redan var synlig
-    if (!isVisible) {
-      target.style.display = "block";
-
-      //ger pilen ny class
-      const arrow = this.querySelector(".arrow-icon");
-      arrow.classList.toggle("flipped");
+    // om man klickar samma igen, stäng
+    if (infoDisplay.dataset.current === infoKey) {
+      infoDisplay.textContent = "";
+      infoDisplay.removeAttribute("data-i18n");
+      infoDisplay.dataset.current = "";
+      this.querySelector(".arrow-icon").classList.remove("flipped");
+      return;
     }
+
+    document
+      .querySelectorAll(".arrow-icon")
+      .forEach((a) => a.classList.remove("flipped"));
+    this.querySelector(".arrow-icon").classList.add("flipped");
+
+    showInfo(infoKey);
+    infoDisplay.dataset.current = infoKey;
   });
 });
