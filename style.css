@@ -372,7 +372,7 @@ body {
 .top-row {
   display: flex;
   align-items: stretch;
-  height: 55vh;
+  height: auto;
   margin-top: 10rem;
 }
 .bottom-about {
@@ -439,6 +439,12 @@ body {
   height: 100%;
   box-sizing: border-box;
   max-height: 500px;
+}
+.about-container,
+.about-container-skills {
+  height: 100%;
+  max-height: none;
+  flex: 1;
 }
 .about-container-skills.about-container-skills .about-right-img {
   position: absolute;
