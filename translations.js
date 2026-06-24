@@ -159,6 +159,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       testamonial.textContent = testimonials[currentLang][currentIndex];
       testamonial.style.opacity = "1";
-    }, 1500);
-  }, 4000);
+    }, 2000);
+  }, 6000);
 });

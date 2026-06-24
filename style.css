@@ -63,7 +63,7 @@ body {
   text-align: center;
 }
 .profile-card {
-  background: rgba(var(--beigeGold-rgb), 0.5);
+  background: transparent;
   box-shadow: 0 0 40px var(--brown);
   width: auto;
   border-radius: 50px;
@@ -178,6 +178,32 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px var(--gold);
 }
+@media (min-width: 1440px) {
+  .profile-card {
+    padding: 2rem;
+  }
+  .overlay-hero {
+    width: 700px;
+  }
+  .profile-pic {
+    width: 400px;
+  }
+
+  .profile-text {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+  }
+  .hero-header {
+    font-size: 5rem;
+  }
+  .hero-name {
+    font-size: 4rem;
+  }
+}
 @media (max-width: 1024px) {
   .hero-container {
     flex-direction: column-reverse;
@@ -188,7 +214,6 @@ body {
 
   .hero-left,
   .hero-right {
-    width: 80%;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -206,7 +231,7 @@ body {
   .hero-container {
     flex-direction: column-reverse;
     height: auto;
-    padding-top: 10px;
+    padding-top: 1rem;
     align-items: center;
   }
 
@@ -235,7 +260,7 @@ body {
   }
 
   .profile-pic {
-    width: 200px;
+    width: auto;
   }
   .profile-text {
     font-size: 1.1rem;
@@ -253,20 +278,21 @@ body {
 
 .navbar {
   position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 30vh;
+  right: 20px;
+  transform: none;
   width: auto;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 
-  padding-right: 30px;
+  padding: 20px 5px;
   z-index: 5;
 
-  background: rgba(var(--gold-rgb), 0.3);
+  background: transparent;
   backdrop-filter: blur(5px);
   border-radius: 20px;
   border: 2px solid var(--brown);
@@ -275,7 +301,10 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
 }
 
 .nav-links a {
@@ -292,7 +321,7 @@ body {
 }
 
 .navbar.scrolled {
-  background: rgba(var(--beigeGold-rgb), 0.4);
+  background: rgba(var(--beigeGold-rgb), 0.6);
 }
 
 #lang-btn {
@@ -325,12 +354,13 @@ body {
 @media (max-width: 1100px) {
   .hamburger {
     display: flex;
-    margin-left: auto;
   }
   .navbar {
     padding: 10px 20px;
     width: 5%;
-    left: 10px;
+    top: 10px;
+    left: auto;
+    right: 10px;
     transform: none;
   }
   .nav-links {
@@ -339,7 +369,7 @@ body {
     flex-direction: column;
     position: absolute;
     top: 30px;
-    left: 0;
+    right: 0;
     width: 80px;
     font-weight: bold;
     background: rgba(var(--beigeGold-rgb), 1);
@@ -394,7 +424,6 @@ body {
   text-align: center;
   height: 100%;
 }
-
 .right-about {
   padding-right: 10%;
   padding-left: 2rem;
@@ -416,6 +445,7 @@ body {
   position: relative;
   height: 100%;
   box-sizing: border-box;
+  max-height: 500px;
 }
 .about-left-img {
   position: absolute;
@@ -423,7 +453,19 @@ body {
   top: -40px;
   width: 200px;
 }
-.about-container .about-right-img {
+.about-container-skills {
+  background: rgba(var(--beigeGold-rgb), 0.8);
+  box-shadow: 0 0 40px var(--brown);
+  width: auto;
+  border-radius: 50px;
+  padding: 3rem;
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  max-height: 500px;
+}
+.about-container-skills.about-container-skills .about-right-img {
   position: absolute;
   right: -80px;
   top: -40px;
@@ -477,20 +519,30 @@ body {
 }
 .testamonials {
   margin-top: 6rem;
-  font-size: 3rem;
-  color: var(--white);
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.692);
   font-family: "Oregano", cursive;
   text-shadow:
     0 0 5px var(--brown),
     0 0 10px var(--brown);
   transition: opacity 1.5s ease;
 }
-
+@media (min-width: 1440px) {
+  .about-header {
+    font-size: 3.2rem;
+  }
+  #about p {
+    font-size: 1.5rem;
+  }
+  .testamonials {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 1024px) {
   #about {
     flex-direction: column;
     height: auto;
-    padding-top: 80px;
+    padding-top: 0;
     align-items: center;
   }
   .top-row {
@@ -498,6 +550,7 @@ body {
     align-items: center;
     height: auto;
     width: 80%;
+    margin-top: 0;
   }
 
   .left-about,
@@ -808,7 +861,6 @@ form textarea:focus {
 
 #site-footer {
   box-sizing: border-box;
-  position: fixed;
   z-index: 4;
   height: 2.5rem;
   bottom: 0px;
@@ -881,11 +933,13 @@ form textarea:focus {
   width: 100%;
 }
 .resume {
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 80%;
+  position: relative;
 }
 .resume a {
   margin-top: 3rem;
@@ -900,10 +954,18 @@ form textarea:focus {
 }
 .resume-btns {
   display: flex;
+  position: absolute;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 33.5rem;
+  bottom: -1%;
+  gap: 30%;
+  z-index: 2;
+  width: auto;
+}
+.resume-btns .btn {
+  font-size: clamp(0.6rem, 1.2vw, 0.85rem); /* skalas automatiskt */
+  padding: clamp(0.4rem, 1vw, 0.8rem);
 }
 @media (max-width: 1024px) {
   .resume-btns {
@@ -922,11 +984,19 @@ form textarea:focus {
   .resume-img {
     width: 100%;
   }
+  .btn {
+    margin: 0.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.7rem;
+    width: 100%;
+  }
 
   .resume-btns {
-    gap: 2rem;
+    gap: 9rem;
+    margin: 0;
+    bottom: -3%;
   }
   .resume a {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 }
