@@ -178,32 +178,7 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px var(--gold);
 }
-@media (min-width: 1440px) {
-  .profile-card {
-    padding: 2rem;
-  }
-  .overlay-hero {
-    width: 700px;
-  }
-  .profile-pic {
-    width: 400px;
-  }
 
-  .profile-text {
-    font-size: 1.8rem;
-  }
-
-  .btn {
-    font-size: 1rem;
-    padding: 1rem 1.2rem;
-  }
-  .hero-header {
-    font-size: 5rem;
-  }
-  .hero-name {
-    font-size: 4rem;
-  }
-}
 @media (max-width: 1024px) {
   .hero-container {
     flex-direction: column-reverse;
@@ -1001,7 +976,6 @@ form textarea:focus {
     margin: 0.2rem;
     margin-bottom: 1.5rem;
     font-size: 0.7rem;
-    width: 100%;
   }
 
   .resume-btns {
