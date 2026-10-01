@@ -132,7 +132,7 @@ body {
 }
 
 .profile-pic {
-  width: 300px;
+  width: 400px;
   height: auto;
   margin: 0 auto;
   margin-bottom: 1.5rem;
@@ -371,7 +371,7 @@ body {
 }
 .top-row {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   height: auto;
   margin-top: 10rem;
 }
@@ -397,7 +397,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100%;
+  height: auto;
 }
 .right-about {
   padding-right: 10%;
@@ -413,14 +413,14 @@ body {
 .about-container {
   background: rgba(var(--beigeGold-rgb), 0.8);
   box-shadow: 0 0 40px var(--brown);
-  width: auto;
+  width: 100%;
   border-radius: 50px;
   padding: 3rem;
   z-index: 2;
   position: relative;
   height: 100%;
   box-sizing: border-box;
-  max-height: 500px;
+  max-height: auto;
 }
 .about-left-img {
   position: absolute;
@@ -431,20 +431,16 @@ body {
 .about-container-skills {
   background: rgba(var(--beigeGold-rgb), 0.8);
   box-shadow: 0 0 40px var(--brown);
-  width: auto;
+  width: 30rem;
   border-radius: 50px;
   padding: 3rem;
   z-index: 2;
   position: relative;
-  height: 100%;
   box-sizing: border-box;
-  max-height: 500px;
 }
 .about-container,
 .about-container-skills {
-  height: 100%;
-  max-height: none;
-  flex: 1;
+  box-sizing: border-box;
 }
 .about-container-skills.about-container-skills .about-right-img {
   position: absolute;
@@ -452,9 +448,15 @@ body {
   top: -40px;
   width: 200px;
 }
+#MVC {
+  width: 500px;
+}
 
 .info-box {
   display: none;
+}
+.info-display {
+  font-size: 1.3rem;
 }
 .right-about a {
   text-decoration: none;
@@ -596,7 +598,7 @@ body {
 
 /* ========projects============ */
 #projects {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   padding-bottom: 20px;
@@ -613,14 +615,17 @@ body {
 .project-card {
   border-radius: 16px;
   overflow: hidden;
-  background: rgba(var(--beigeGold-rgb), 0.6);
+  background: rgba(var(--beigeGold-rgb), 0.8);
   box-shadow:
     0 0 5px var(--brown),
     0 0 10px var(--brown);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .project-card img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 10;
   display: block;
 
   object-fit: cover;
@@ -649,6 +654,8 @@ body {
   flex-direction: column;
   gap: 0.6rem;
   margin: 0 auto;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .project-info h3 {
@@ -942,9 +949,7 @@ form textarea:focus {
   width: 80%;
   position: relative;
 }
-.resume a {
-  margin-top: 3rem;
-}
+
 .resume-img {
   width: 60%;
   box-shadow:
@@ -959,10 +964,11 @@ form textarea:focus {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  bottom: -1%;
+  bottom: -7%;
   gap: 30%;
   z-index: 2;
-  width: auto;
+  min-width: 140px;
+  white-space: nowrap;
 }
 .resume-btns .btn {
   font-size: clamp(0.6rem, 1.2vw, 0.85rem); /* skalas automatiskt */
@@ -988,13 +994,14 @@ form textarea:focus {
   .btn {
     margin: 0.2rem;
     margin-bottom: 1.5rem;
-    font-size: 0.7rem;
+    font-size: 0.4rem;
   }
 
   .resume-btns {
     gap: 9rem;
     margin: 0;
     bottom: -3%;
+    min-width: none;
   }
   .resume a {
     margin-top: 2rem;

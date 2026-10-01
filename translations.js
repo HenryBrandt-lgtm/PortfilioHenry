@@ -20,14 +20,20 @@ const translations = {
       "Genom företagandet har jag byggt upp god erfarenhet av ledarskap, personalansvar och social kompetens - vilket har gett mig en tydlig bild av vad som krävs av en bra anställd. Jag är van att arbeta i högt tempo och har en stark arbetsmoral.",
     "skills-header": "Mina kunskaper",
     //info-boxen med skills
-    "skill-csharp": "Vad jag kan om C#",
-    "skill-sql": "Vad jag kan om SQL.",
-    "skill-html": "Vad jag kan om HTML.",
-    "skill-css": "Vad jag kan om CSS.",
-    "skill-js": "Vad jag kan om JavaScript.",
-    "skill-razorpages": "Vad jag kan om RazorPages.",
-    "skill-react": "Vad jag kan om React.",
-    "skill-azure": "Vad jag kan om Azure.",
+    "skill-csharp":
+      "C# mitt favoritspråk än så länge, det jag använt mest. Backend är den personliga favoriten",
+    "skill-sql": `Använt under mina projekt för att skapa lokala databaser. 
+      Van att skriva Querys.`,
+    "skill-html":
+      "Använt en hel del HTML i mina projekt, inte så spännande men det ska vara där.",
+    "skill-css":
+      "Frontend är inte mitt favoritområde men kan ändå använda CSS och tailwind.",
+    "skill-js": "Roligt med JavaScript för att få en liveuppdaterad hemsida.",
+    "skill-razorpages":
+      "RazorPages är tillsammans med MVC favoriten när det kommer till ASP.Net.",
+    "skill-mvc":
+      "MVC är enkelt och trevligt att använda, favorit tillsammans med RazorPages.",
+    "skill-azure": "Använt Azure mest hittills för att skapa databas.",
     //project
     "project-tetris":
       "Skapade och designade en tetris sida med neon tema. Ett av mina absolut första projekt i HTML, CSS och JS.",
@@ -42,6 +48,7 @@ const translations = {
     //resume sidan
     "home-btn": "Startsidan",
     "download-btn": "Ladda ner",
+    "cv-pdf-href": "files/CV HenryBrandt.pdf",
   },
   en: {
     //navtext
@@ -64,14 +71,21 @@ const translations = {
       "Through running a business I've built up solid experience in leadership, staff management and social skills - which has given me a clear picture of what it takes to be a great employee. I'm used to working at a fast pace and have a strong work ethic.",
     "skills-header": "Skills i've learned",
     //info boxen med skills
-    "skill-csharp": "What i know about C#",
-    "skill-sql": "What I know about SQL.",
-    "skill-html": "What I know about HTML.",
-    "skill-css": "What I know about CSS.",
-    "skill-js": "What I know about JavaScript.",
-    "skill-razorpages": "What I know about RazorPages.",
-    "skill-react": "What I know about React.",
-    "skill-azure": "What I know about Azure.",
+    "skill-csharp":
+      "C# is my favorite language so far, and the one I've used the most. Backend is my personal favorite.",
+    "skill-sql":
+      "Used in my projects to create local databases. Accustomed to writing queries.",
+    "skill-html":
+      "Used HTML quite a bit in my projects—not super exciting, but it needs to be there.",
+    "skill-css":
+      "Frontend isn't my favorite area, but I can still use CSS and Tailwind.",
+    "skill-js":
+      "JavaScript is fun for creating dynamic, live-updated websites.",
+    "skill-razorpages":
+      "Razor Pages, along with MVC, is my favorite when it comes to ASP.NET.",
+    "skill-mvc":
+      "MVC is simple and pleasant to use, a favorite alongside Razor Pages.",
+    "skill-azure": "Mainly used Azure so far to set up databases.",
     //project
     "project-tetris":
       "Created and designed a Tetris site with a neon theme. One of my very first projects in HTML, CSS and JS.",
@@ -86,17 +100,18 @@ const translations = {
     //resume sidan
     "home-btn": "Homepage",
     "download-btn": "Download",
+    "cv-pdf-href": "files/CV HenryBrandt EN.pdf",
   },
 };
 // =======testamonials=====
 const testimonials = {
   sv: [
-    '"Riktigt cool kille" - Hanna',
+    '"Självständig, noggrann, effektiv och intiativtagande" - Jill',
     '"Bästa chefen jag någonsin kommer ha" - Romee',
     '"Otroligt lösningsorienterad" - Åsa',
   ],
   en: [
-    '"Real fine lad" - Hanna',
+    '"Independent, thorough, efficient, and proactive" - Jill',
     '"The best boss I\'ll ever have" - Rommee',
     '"Incredibly solution-oriented" - Åsa',
   ],
@@ -128,6 +143,13 @@ function updateLangIcon() {
       currentLang === "sv"
         ? "Images/CVHenryBrandt.webp"
         : "Images/CVHenryBrandtEN.webp";
+  }
+  const downloadBtn = document.getElementById("download-btn");
+  if (downloadBtn) {
+    downloadBtn.href =
+      currentLang === "sv"
+        ? "files/CV HenryBrandt.pdf"
+        : "files/CV Henry Brandt EN.pdf";
   }
 }
 
