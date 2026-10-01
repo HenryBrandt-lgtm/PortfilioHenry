@@ -134,7 +134,7 @@ let currentLang = localStorage.getItem("lang") || "sv";
 
 function updateLangIcon() {
   const icon = document.getElementById("lang-icon");
-  icon.src = currentLang === "sv" ? "images/uk.svg" : "images/sweden.svg";
+  icon.src = currentLang === "sv" ? "Images/uk.svg" : "Images/sweden.svg";
   icon.alt = currentLang === "sv" ? "EN" : "SV";
 
   const resume = document.getElementById("resume-img");
