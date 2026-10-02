@@ -848,15 +848,19 @@ form textarea:focus {
   box-shadow: 0 10px 25px var(--gold);
 }
 .form-status {
-  margin-top: 1rem;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  animation: slideDown 0.3s ease;
-  font-size: 1rem;
+  position: fixed;
+  top: calc(1rem + env(safe-area-inset-top, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: max-content;
+  max-width: min(90vw, 480px);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   line-height: 1.4;
-  overflow-wrap: anywhere;
   box-sizing: border-box;
-  width: 100%;
+  animation: dropDown 0.3s ease;
 }
 .form-status.success {
   background: none;
@@ -867,14 +871,14 @@ form textarea:focus {
   color: var(--brown);
 }
 
-@keyframes slideDown {
+@keyframes dropDown {
   from {
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translate(-50%, -12px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 }
 @media (max-width: 1024px) {
