@@ -872,6 +872,9 @@ form textarea:focus {
   background: none;
   color: var(--brown);
 }
+.form-status[hidden] {
+  display: none;
+}
 
 @keyframes dropDown {
   from {
