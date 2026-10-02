@@ -206,6 +206,11 @@ document.addEventListener("DOMContentLoaded", function () {
     statusBox.textContent = translations[currentLang][key];
     statusBox.className = `form-status ${type}`;
     statusBox.hidden = false;
+
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(function () {
+      statusBox.hidden = true;
+    }, 6000);
   }
 
   form.addEventListener("submit", async function (e) {
