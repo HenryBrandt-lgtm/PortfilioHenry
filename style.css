@@ -859,11 +859,11 @@ form textarea:focus {
   width: 100%;
 }
 .form-status.success {
-  background: #e6f4ea;
-  color: var(--beigeGold);
+  background: none;
+  color: var(--brown);
 }
 .form-status.error {
-  background: #fdecea;
+  background: none;
   color: var(--brown);
 }
 
