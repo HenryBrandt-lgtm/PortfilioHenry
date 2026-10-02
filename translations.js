@@ -45,6 +45,9 @@ const translations = {
     "send-btn": "Skicka",
     "gdpr-text":
       "Dina uppgifter lagras inte och används endast för att besvara ditt meddelande.",
+    "send-btn": "Skicka",
+    "form-success": "Tack för ditt mejl! Jag återkommer snarast.",
+    "form-error": "Något gick fel. Försök igen eller mejla mig direkt.",
     //resume sidan
     "home-btn": "Startsidan",
     "download-btn": "Ladda ner",
@@ -97,6 +100,11 @@ const translations = {
     "send-btn": "Send",
     "gdpr-text":
       "Your details are not stored and will only be used to respond to your message.",
+    "send-btn": "Send",
+    "form-success":
+      "Thanks for your email! I'll get back to you as soon as possible.",
+    "form-error":
+      "Something went wrong. Please try again or email me directly.",
     //resume sidan
     "home-btn": "Homepage",
     "download-btn": "Download",
@@ -183,4 +191,42 @@ document.addEventListener("DOMContentLoaded", function () {
       testamonial.style.opacity = "1";
     }, 2000);
   }, 6000);
+});
+
+// ============kontaktformulär==========
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  if (!form) return; // finns inte på CV-sidan
+
+  const statusBox = document.getElementById("form-status");
+  const sendBtn = document.getElementById("send-email");
+
+  function showStatus(key, type) {
+    statusBox.setAttribute("data-i18n", key);
+    statusBox.textContent = translations[currentLang][key];
+    statusBox.className = `form-status ${type}`;
+    statusBox.hidden = false;
+  }
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    sendBtn.disabled = true;
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form),
+      });
+
+      if (!response.ok) throw new Error("Request failed");
+
+      showStatus("form-success", "success");
+      form.reset();
+    } catch (err) {
+      showStatus("form-error", "error");
+    } finally {
+      sendBtn.disabled = false;
+    }
+  });
 });

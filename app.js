@@ -164,3 +164,36 @@ document.querySelectorAll(".areas-list a").forEach(function (link) {
     infoDisplay.dataset.current = infoKey;
   });
 });
+
+// formulär - inte skickas till annan sida och få ett tack meddelande istället
+const form = document.getElementById("contact-form");
+const statusBox = document.getElementById("form-status");
+const sendBtn = document.getElementById("send-email");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  sendBtn.disabled = true;
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: new FormData(form),
+    });
+
+    if (!response.ok) throw new Error("Request failed");
+
+    showStatus("Tack för ditt mejl! Jag återkommer snarast.", "success");
+    form.reset();
+  } catch (err) {
+    showStatus("Något gick fel. Försök igen eller mejla mig direkt.", "error");
+  } finally {
+    sendBtn.disabled = false;
+  }
+});
+
+function showStatus(message, type) {
+  statusBox.textContent = message;
+  statusBox.className = `form-status ${type}`;
+  statusBox.hidden = false;
+}
