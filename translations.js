@@ -206,9 +206,12 @@ document.addEventListener("DOMContentLoaded", function () {
     statusBox.textContent = translations[currentLang][key];
     statusBox.className = `form-status ${type}`;
     statusBox.hidden = false;
+    statusBox.style.display = "";
+
     clearTimeout(hideTimer);
     hideTimer = setTimeout(function () {
       statusBox.hidden = true;
+      statusBox.style.display = "none";
     }, 6000);
   }
 
