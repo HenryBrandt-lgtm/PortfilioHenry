@@ -200,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const statusBox = document.getElementById("form-status");
   const sendBtn = document.getElementById("send-email");
+  let hideTimer; // <-- den här saknades
 
   function showStatus(key, type) {
     statusBox.setAttribute("data-i18n", key);
@@ -226,7 +227,10 @@ document.addEventListener("DOMContentLoaded", function () {
         body: new FormData(form),
       });
 
-      if (!response.ok) throw new Error("Request failed");
+      const data = await response.json();
+      if (!response.ok || String(data.success) !== "true") {
+        throw new Error("Request failed");
+      }
 
       showStatus("form-success", "success");
       form.reset();
