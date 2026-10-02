@@ -861,6 +861,8 @@ form textarea:focus {
   line-height: 1.4;
   box-sizing: border-box;
   animation: dropDown 0.3s ease;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 .form-status.success {
   background: none;
