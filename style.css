@@ -847,6 +847,36 @@ form textarea:focus {
 
   box-shadow: 0 10px 25px var(--gold);
 }
+.form-status {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  animation: slideDown 0.3s ease;
+  font-size: 1rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+  width: 100%;
+}
+.form-status.success {
+  background: #e6f4ea;
+  color: var(--beigeGold);
+}
+.form-status.error {
+  background: #fdecea;
+  color: var(--brown);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media (max-width: 1024px) {
   #contact-me {
     height: auto;
